@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт з лабораторних робіт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .student-info {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .lab-link {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .lab-link:hover {
+            background-color: #45a049;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .left-panel {
+            width: 30%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .right-panel {
+            width: 70%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 300px;
+            background-color: #f9f9f9;
+        }
+
+        .settings-btn {
+            padding: 12px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: left;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .settings-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .content-item {
+            display: none;
+            padding: 15px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .active-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Звіт з лабораторних робіт<br>З дисципліни ""</h1>
+    </div>
+
+    <div class="student-info">
+        <h2>Студента групи ____ Ірина</h2>
+    </div>
+
+    <div class="buttons-container">
+        <a href="1.1.html" class="lab-link">Лабораторна робота 1.1</a>
+        <a href="1.2.html" class="lab-link">Лабораторна робота 1.2</a>
+        <a href="2.1.html" class="lab-link">Лабораторна робота 2.1</a>
+        <a href="3.1.html" class="lab-link">Лабораторна робота 3.1</a>
+        <a href="3.2.html" class="lab-link">Лабораторна робота 3.2</a>
+        <a href="4.html" class="lab-link">Лабораторна робота 4</a>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="left-panel">
+            <button class="settings-btn" data-content="theme">Тема/Мета</button>
+            <button class="settings-btn" data-content="z1">Завдання 1</button>
+            <button class="settings-btn" data-content="z2">Завдання 2</button>
+            <button class="settings-btn" data-content="z3">Завдання 3</button>
+            <button class="settings-btn" data-content="z4">Завдання 4</button>
+            <button class="settings-btn" data-content="z5">Завдання 5</button>
+            <button class="settings-btn" data-content="conclusions">Висновки</button>
+        </div>
+
+        <div class="right-panel">
+            <div class="content-item" id="theme">
+                <p>Тема:  ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+                    ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+                     </p>
+                <p>Мета: придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях.  Реалізація програм засовами мови JAVASCRIPT </p>
+            </div>
+            <div class="content-item" id="z1">
+                <h4>Скріншот результату десктоп версії</h4>
+                <img src="/reports/media/4.1.1.png" alt="">
+                <img src="/reports/media/4.1.2.png" alt="">
+                <img src="/reports/media/4.1.3.png" alt="">
+                <img src="/reports/media/4.1.4.png" alt="">
+                <img src="/reports/media/4.1.5.png" alt="">
+                <img src="/reports/media/4.1.6.png" alt="">
+                <img src="/reports/media/4.1.7.png" alt="">
+
+            </div>
+            <div class="content-item" id="z1">
+                <h4>Скріншот результату</h4>
+                <img src="/reports/media/3.1.1.png" alt="">
+                <h4>Код JS</h4>
+                <pre>
+function makeTransaction(quantity, pricePerDroid) {
+    const totalPrice = quantity * pricePerDroid;
+    return `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+}
+console.log(makeTransaction(5, 1000)); 
+                </pre>
+            </div>
+            
+            <div class="content-item" id="z2">
+                <h4>Скріншот результату</h4>
+                <img src="/reports/media/3.1.2.png" alt="">
+                <h4>Код JS</h4>
+                <pre>
+function checkForSpam(message) {
+    const lowerCaseMessage = message.toLowerCase();
+    if (lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale')) {
+        return true;
+    }
+    return false;
+}
+console.log(checkForSpam('Latest SPAM offers!')); 
+console.log(checkForSpam('Huge SALE discounts!')); 
+console.log(checkForSpam('Your order has been shipped.')); 
+                </pre>
+            </div>
+            
+            <div class="content-item" id="z3">
+                <h4>Скріншот результату</h4>
+                <img src="/reports/media/3.1.3.png" alt="">
+                <h4>Код JS</h4>
+                <pre>
+function filterArray(numbers, value) {
+    const filteredNumbers = [];
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] > value) {
+            filteredNumbers.push(numbers[i]);
+        }
+    }
+    return filteredNumbers;
+}
+console.log(filterArray([1, 2, 3, 4, 5, 6], 3)); 
+console.log(filterArray([10, 15, 20, 25, 30], 18)); 
+                </pre>
+            </div>
+
+            <div class="content-item" id="z4">
+                <h4>Скріншот результату</h4>
+                <img src="/reports/media/3.1.4.png" alt="">
+                <h4>Код JS</h4>
+                <pre>
+function createArray(length) {
+    const array = [];
+    for (let i = 0; i < length; i++) {
+        array.push(Math.floor(Math.random() * 100)); 
+    }
+    return array;
+}
+
+function findMaxMin(array) {
+    let maxEven = -Infinity;
+    let minEven = Infinity;
+    let maxOdd = -Infinity;
+    let minOdd = Infinity;
+
+    for (let i = 0; i < array.length; i++) {
+        if (i % 2 === 0) { 
+            if (array[i] > maxEven) maxEven = array[i];
+            if (array[i] < minEven) minEven = array[i];
+        } else { 
+            if (array[i] > maxOdd) maxOdd = array[i];
+            if (array[i] < minOdd) minOdd = array[i];
+        }
+    }
+    return { maxEven, minEven, maxOdd, minOdd };
+}
+
+function selectionSortDescending(array) {
+    for (let i = 0; i < array.length - 1; i++) {
+        let maxIdx = i;
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[j] > array[maxIdx]) {
+                maxIdx = j;
+            }
+        }
+        if (maxIdx !== i) {
+            [array[i], array[maxIdx]] = [array[maxIdx], array[i]];
+        }
+    }
+    return array;
+}
+const length = 10; 
+const array = createArray(length);
+console.log("Вхідний масив:", array);
+const sortedArray = selectionSortDescending([...array]);
+console.log("Вихідний масив (у порядку зменшення):", sortedArray);
+const { maxEven, minEven, maxOdd, minOdd } = findMaxMin(array);
+console.log("Максимальне значення серед елементів із парними індексами:", maxEven);
+console.log("Мінімальне значення серед елементів із парними індексами:", minEven);
+console.log("Максимальне значення серед елементів із непарними індексами:", maxOdd);
+console.log("Мінімальне значення серед елементів із непарними індексами:", minOdd);
+                </pre>
+            </div>
+
+            <div class="content-item" id="z5">
+                <h4>Готовий результат</h4>
+                <pre>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow</title>
+  <style>
+    #slideshow {
+      width: 500px; 
+      height: 300px; 
+      overflow: hidden;
+      margin: auto;
+      border: 2px solid #000;
+    }
+    #slideshow img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+<div id="slideshow">
+    <img src="https://th.bing.com/th/id/OIP.4NT6-kMznuSJk4_NI9orRwHaHa?rs=1&pid=ImgDetMain" alt="JavaScript Image 1">
+    <img src="https://th.bing.com/th/id/R.26e16131d4778382634bbde8c0024b40?rik=hLsnPQfaQHmpCg&riu=http%3a%2f%2fwww.alleycat.org%2fwp-content%2fuploads%2f2019%2f03%2fFELV-cat.jpg&ehk=RtQmSl2T87%2ffrNbUm%2f53jnzTNhMzaoQKlwsvTU37uU0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="JavaScript Image 2" style="display: none;">
+    <img src="https://th.bing.com/th/id/OIP.ML0MOLhEx82qVqjjADdPlwHaE8?w=960&h=640&rs=1&pid=ImgDetMain" alt="JavaScript Image 3" style="display: none;">
+  </div>
+  <script>
+    let currentImageIndex = 0;
+    const images = document.querySelectorAll('#slideshow img');
+    const interval = 3000; 
+  
+    function showNextImage() {
+      images[currentImageIndex].style.display = 'none';
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].style.display = 'block';
+    }
+    setInterval(showNextImage, interval);
+  </script>
+  </body>
+  </html>
+                  </pre>
+                  <h4>Код HTML</h4>
+                    <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                      &lt;meta charset="UTF-8"&gt;
+                      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                      &lt;title&gt;Slideshow&lt;/title&gt;
+                      &lt;style&gt;
+                        #slideshow {
+                          width: 500px; 
+                          height: 300px; 
+                          overflow: hidden;
+                          margin: auto;
+                          border: 2px solid #000;
+                        }
+                        #slideshow img {
+                          width: 100%;
+                          height: 100%;
+                        }
+                      &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                    &lt;div id="slideshow"&gt;
+                      &lt;img src="https://th.bing.com/th/id/OIP.4NT6-kMznuSJk4_NI9orRwHaHa?rs=1&pid=ImgDetMain" alt="JavaScript Image 1"&gt;
+                      &lt;img src="https://th.bing.com/th/id/R.26e16131d4778382634bbde8c0024b40?rik=hLsnPQfaQHmpCg&riu=http%3a%2f%2fwww.alleycat.org%2fwp-content%2fuploads%2f2019%2f03%2fFELV-cat.jpg&ehk=RtQmSl2T87%2ffrNbUm%2f53jnzTNhMzaoQKlwsvTU37uU0%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="JavaScript Image 2" style="display: none;"&gt;
+                      &lt;img src="https://th.bing.com/th/id/OIP.ML0MOLhEx82qVqjjADdPlwHaE8?w=960&h=640&rs=1&pid=ImgDetMain" alt="JavaScript Image 3" style="display: none;"&gt;
+                    &lt;/div&gt;
+                    &lt;script&gt;
+                      let currentImageIndex = 0;
+                      const images = document.querySelectorAll('#slideshow img');
+                      const interval = 3000; 
+                      function showNextImage() {
+                        images[currentImageIndex].style.display = 'none';
+                        currentImageIndex = (currentImageIndex + 1) % images.length;
+                        images[currentImageIndex].style.display = 'block';
+                      }
+                      setInterval(showNextImage, interval);
+                    &lt;/script&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                    </pre>
+                    
+              </div>
+  
+              <div class="content-item" id="conclusions">
+<p>Висновки: під час лабораторної роботи я отримала практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях.</p>
+              </div>
+          </div>
+      </div>
+  </body>
+  <script>
+      const buttons = document.querySelectorAll('.settings-btn');
+      const contentItems = document.querySelectorAll('.content-item');
+  
+      buttons.forEach(button => {
+          button.addEventListener('click', () => {
+              const targetId = button.getAttribute('data-content');
+              contentItems.forEach(item => {
+                  item.classList.remove('active-content');
+              });
+              document.getElementById(targetId).classList.add('active-content');
+          });
+      });
+  </script>
+  </html>
+  

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tech-stack {
+            background: #000;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .tech-item {
+            width: 80px;
+            height: 80px;
+            background: #1a1a1a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+
+        .benefits {
+            background: #f8f8f8;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .benefits-image {
+            flex: 0 0 300px;
+        }
+
+        .benefits-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .benefits-list {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checkmark {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .course-info {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .course-title {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .feature {
+            flex: 1;
+            max-width: 300px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #000;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background: #333;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tech-stack">
+        <div class="tech-item">
+            <img src="html-css-icon.png" alt="HTML/CSS">
+        </div>
+        <div class="tech-item">
+            <img src="js-icon.png" alt="JavaScript">
+        </div>
+        <div class="tech-item">
+            <img src="react-icon.png" alt="React">
+        </div>
+        <div class="tech-item">
+            <img src="redux-icon.png" alt="Redux">
+        </div>
+        <div class="tech-item">
+            <img src="ts-icon.png" alt="TypeScript">
+        </div>
+        <div class="tech-item">
+            <img src="angular-icon.png" alt="Angular">
+        </div>
+        <div class="tech-item">
+            <img src="github-icon.png" alt="GitHub">
+        </div>
+        <div class="tech-item">
+            <img src="firebase-icon.png" alt="Firebase">
+        </div>
+    </div>
+
+    <div class="benefits">
+        <div class="benefits-image">
+            <img src="person.png" alt="Representative">
+        </div>
+        <div class="benefits-list">
+            <div class="benefit-item">
+                <span class="checkmark">✓</span>
+                <p>НАВІТЬ У ЗРІЛОМУ ВІЦІ</p>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✓</span>
+                <p>НАВІТЬ БЕЗ ПРОФІЛЬНОЇ ОСВІТИ ТА НАВИЧОК</p>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✓</span>
+                <p>НАВІТЬ БЕЗ ЗНАННЯ АНГЛІЙСЬКОЇ</p>
+            </div>
+            <div class="benefit-item">
+                <span class="checkmark">✓</span>
+                <p>НАВІТЬ БЕЗ ЗНАНЬ ПРОГРАМУВАННЯ</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-info">
+        <h2 class="course-title">КУРС ПРОГРАМУВАННЯ JAVA З ПРАЦЕВЛАШТУВАННЯМ:</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>СТАЖУВАННЯ В IT-КОМПАНІЇ</h3>
+                <p>Пройди себе на курсі і ще до закінчення навчання ми відправимо тебе на стажування в IT-компанію.</p>
+            </div>
+            <div class="feature">
+                <h3>ТРИ ВИПУСКНИХ ПРОЕКТИ</h3>
+                <p>Наприкінці курсу ти будеш мати три проекти, з якими легко працевлаштуєшся.</p>
+            </div>
+            <div class="feature">
+                <h3>ІНТЕНСИВНІСТЬ</h3>
+                <p>На відміну від інших наші студенти вчаться 6 разів на тиждень в продовж всього терміну.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-icon">
+            <img src="" alt="">
+        </div>
+        <div class="social-icon"></div>
+        <div class="social-icon"></div>
+        <div class="social-icon"></div>
+        <div class="social-icon"></div>
+    </footer>
+</body>
+</html>

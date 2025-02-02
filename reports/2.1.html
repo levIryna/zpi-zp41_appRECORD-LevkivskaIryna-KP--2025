@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="uk">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Звіт з лабораторних робіт</title>
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         margin: 20px;
+         line-height: 1.6;
+         }
+         .header {
+         text-align: center;
+         margin-bottom: 30px;
+         }
+         .student-info {
+         text-align: center;
+         margin-bottom: 40px;
+         }
+         .buttons-container {
+         display: flex;
+         gap: 10px;
+         overflow-x: auto;
+         padding-bottom: 10px;
+         margin-bottom: 30px;
+         }
+         .lab-link {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         white-space: nowrap;
+         }
+         .lab-link:hover {
+         background-color: #45a049;
+         }
+         .content-wrapper {
+         display: flex;
+         gap: 20px;
+         }
+         .left-panel {
+         width: 30%;
+         padding: 20px;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         }
+         .right-panel {
+         width: 70%;
+         padding: 20px;
+         border: 1px solid #ddd;
+         border-radius: 4px;
+         }
+         .settings-btn {
+         display: block;
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 10px;
+         background-color: #007bff;
+         color: white;
+         border: none;
+         border-radius: 4px;
+         cursor: pointer;
+         text-align: left;
+         }
+         .settings-btn:hover {
+         background-color: #0056b3;
+         }
+         .content-item {
+         display: none;
+         }
+         .content-item.active-content {
+         display: block;
+         }
+         pre {
+         background-color: #f4f4f4;
+         padding: 10px;
+         border-radius: 4px;
+         overflow-x: auto;
+         }
+         .code-example {
+         margin: 15px 0;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header">
+         <h1>
+            Звіт з лабораторних робіт
+            <br>
+            З дисципліни "Web-дизайн"
+         </h1>
+      </div>
+      <div class="student-info">
+         <h2>Студента групи ІТ-101 Ірина</h2>
+      </div>
+      <div class="buttons-container">
+        <a href="1.1.html" class="lab-link">Лабораторна робота 1.1</a>
+        <a href="1.2.html" class="lab-link">Лабораторна робота 1.2</a>
+        <a href="2.1.html" class="lab-link">Лабораторна робота 2.1</a>
+        <a href="3.1.html" class="lab-link">Лабораторна робота 3.1</a>
+        <a href="3.2.html" class="lab-link">Лабораторна робота 3.2</a>
+        <a href="4.html" class="lab-link">Лабораторна робота 4</a>
+      </div>
+      <div class="content-wrapper">
+      <div class="left-panel">
+         <button class="settings-btn" data-content="theme">Тема/Мета</button>
+         <button class="settings-btn" data-content="task1">Завдання 1</button>
+         <button class="settings-btn" data-content="task2">Завдання 2</button>
+         <button class="settings-btn" data-content="fixed-table">Фіксована таблична верстка</button>
+         <button class="settings-btn" data-content="fluid-table">Гумова таблична верстка</button>
+         <button class="settings-btn" data-content="fixed-block">Фіксована блочна верстка</button>
+         <button class="settings-btn" data-content="fluid-block">Гумова блочна верстка</button>
+         <button class="settings-btn" data-content="task3">Завдання 3</button>
+         <button class="settings-btn" data-content="screenshot">Скріншот сторінки</button>
+         <button class="settings-btn" data-content="html">HTML/CSS</button>
+         <button class="settings-btn" data-content="conclusions">Висновки</button>
+      </div>
+      <div class="right-panel" id="contentArea">
+         <div id="theme" class="content-item active-content">
+            <h3>Тема/Мета</h3>
+            <p>
+               <strong>Тема:</strong>
+               ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА.  ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+            </p>
+            <p>
+               <strong>Мета:</strong>
+            <P>⎯	придбати практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок</P>
+            <P>
+               ⎯	придбати практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX
+            </p>
+         </div>
+         <div id="task1" class="content-item">
+            <h3>Завдання 1</h3>
+            <p>Створити базову структуру HTML-документа з використанням таблиць для верстки.</p>
+            <h4>Скріншот сторінки</h4>
+            <img src="/reports/media/2.1.1.png" alt="">
+            <img src="/reports/media/2.1.2.png" alt="">
+            <img src="/reports/media/2.1.3.png" alt="">
+            <img src="/reports/media/2.1.4.png" alt="">
+
+            <div class="code-example">
+               <h4>HTML код:</h4>
+               <pre>
+                &lt;style&gt;
+                .course-section {
+                  background-color: rgba(90, 219, 255, 1);
+                  display: flex;
+                  padding: 40px 0;
+                  flex-direction: column;
+                  overflow: hidden;
+                  align-items: center;
+                  width: 100%;
+                }
+                
+                .hero-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-self: stretch;
+                  position: relative;
+                  min-height: 600px;
+                  width: 100%;
+                  align-items: start;
+                  padding: 40px 60px;
+                }
+                
+                .hero-image {
+                  position: absolute;
+                  inset: 0;
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                }
+                
+                .hero-content {
+                  position: relative;
+                  display: flex;
+                  width: 100%;
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  flex-direction: column;
+                }
+                
+                .hero-title {
+                  font: 400 48px Kablammo, sans-serif;
+                  margin-bottom: 40px;
+                  color: #000;
+                }
+                
+                .search-button {
+                  border-radius: 10px;
+                  background-color: rgba(251, 255, 0, 1);
+                  align-self: start;
+                  width: 400px;
+                  padding: 12px 40px;
+                  font: 500 32px Advent Pro, sans-serif;
+                  cursor: pointer;
+                  border: none;
+                  transition: background-color 0.3s;
+                }
+                
+                .search-button:hover {
+                  background-color: rgba(231, 235, 0, 1);
+                }
+                
+                .section-header {
+                  background-color: rgba(251, 255, 0, 1);
+                  width: 100%;
+                  text-align: center;
+                  padding: 24px 40px;
+                  font: 500 36px Advent Pro, sans-serif;
+                  margin: 40px 0;
+                }
+                
+                .courses-grid {
+                  margin-top: 40px;
+                  width: 100%;
+                  max-width: 1200px;
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 30px;
+                  padding: 0 20px;
+                }
+                
+                .course-card {
+                  border-radius: 20px;
+                  background-color: rgba(255, 255, 255, 1);
+                  display: flex;
+                  flex-direction: column;
+                  font-size: 18px;
+                  padding: 20px;
+                  transition: transform 0.3s;
+                }
+                
+                .course-card:hover {
+                  transform: translateY(-5px);
+                }
+                
+                .course-image {
+                  aspect-ratio: 16/9;
+                  object-fit: cover;
+                  width: 100%;
+                  border-radius: 10px;
+                }
+                
+                .course-title {
+                  border-radius: 8px;
+                  background-color: rgba(90, 219, 255, 1);
+                  margin-top: 15px;
+                  font-family: Inter, sans-serif;
+                  color: rgba(255, 255, 255, 1);
+                  font-weight: 500;
+                  padding: 10px 20px;
+                  font-size: 20px;
+                }
+                
+                .course-meta {
+                  display: flex;
+                  margin-top: 15px;
+                  gap: 10px;
+                  align-items: center;
+                }
+                
+                .age-range {
+                  color: rgba(90, 90, 90, 1);
+                  font-family: Inter, sans-serif;
+                  font-weight: 400;
+                }
+                
+                .difficulty {
+                  display: flex;
+                  margin-top: 10px;
+                  gap: 15px;
+                  align-items: center;
+                }
+                
+                .difficulty-label {
+                  color: rgba(90, 90, 90, 1);
+                  font-family: Inter, sans-serif;
+                  font-weight: 400;
+                }
+                
+                .price {
+                  color: rgba(90, 90, 90, 1);
+                  font-family: Inter, sans-serif;
+                  font-weight: 400;
+                  margin-top: 10px;
+                }
+                
+                .enroll-button {
+                  border-radius: 8px;
+                  background-color: rgba(251, 255, 0, 1);
+                  display: flex;
+                  margin-top: 20px;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 10px;
+                  cursor: pointer;
+                  border: none;
+                  transition: background-color 0.3s;
+                  font-size: 18px;
+                }
+                
+                .enroll-button:hover {
+                  background-color: rgba(231, 235, 0, 1);
+                }
+                
+                .search-section {
+                  background-color: rgba(251, 255, 0, 1);
+                  width: 100%;
+                  padding: 40px;
+                  margin-top: 60px;
+                }
+                
+                .search-container {
+                  max-width: 1200px;
+                  margin: 0 auto;
+                }
+                
+                .search-form {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                }
+                
+                .search-title {
+                  color: rgba(0, 0, 0, 1);
+                  font: 500 36px Advent Pro, sans-serif;
+                  margin-bottom: 20px;
+                }
+                
+                .form-group {
+                  display: flex;
+                  gap: 15px;
+                  align-items: center;
+                }
+                
+                .form-label {
+                  color: rgba(172, 172, 172, 1);
+                  font: 300 24px Inter, sans-serif;
+                }
+                
+                .form-input {
+                  border-radius: 8px;
+                  background-color: rgba(255, 255, 255, 1);
+                  height: 40px;
+                  width: 267px;
+                  border: 1px solid #ddd;
+                  padding: 0 10px;
+                }
+                
+                .age-inputs {
+                  display: flex;
+                  gap: 15px;
+                  align-items: center;
+                  font-size: 18px;
+                }
+                
+                .age-input {
+                  border-radius: 4px;
+                  background-color: rgba(255, 255, 255, 1);
+                  width: 60px;
+                  height: 36px;
+                  border: 1px solid #ddd;
+                  padding: 0 5px;
+                }
+                
+                .difficulty-buttons {
+                  display: flex;
+                  gap: 15px;
+                  align-items: center;
+                }
+                
+                .difficulty-button {
+                  border-radius: 4px;
+                  background-color: rgba(255, 255, 255, 1);
+                  padding: 8px 20px;
+                  font: 500 22px Advent Pro, sans-serif;
+                  cursor: pointer;
+                  border: 1px solid #ddd;
+                  transition: background-color 0.3s;
+                }
+                
+                .difficulty-button:hover {
+                  background-color: #f0f0f0;
+                }
+                
+                .contact-title {
+                  color: rgba(0, 0, 0, 1);
+                  margin-top: 60px;
+                  font: 500 48px Advent Pro, sans-serif;
+                  text-align: center;
+                }
+                
+                .contact-subtitle {
+                  color: rgba(0, 0, 0, 1);
+                  margin-top: 20px;
+                  font: 500 36px Advent Pro, sans-serif;
+                  text-align: center;
+                }
+                
+                .contact-button {
+                  border-radius: 15px;
+                  background-color: rgba(251, 255, 0, 1);
+                  margin: 30px auto;
+                  width: 100%;
+                  max-width: 600px;
+                  padding: 15px 40px;
+                  font: 500 32px Advent Pro, sans-serif;
+                  cursor: pointer;
+                  border: none;
+                  display: block;
+                  transition: background-color 0.3s;
+                }
+                
+                .contact-button:hover {
+                  background-color: rgba(231, 235, 0, 1);
+                }
+                
+                @media (max-width: 1280px) {
+                  .courses-grid {
+                    padding: 0 40px;
+                  }
+                  
+                  .hero-title {
+                    font-size: 42px;
+                  }
+                  
+                  .search-button {
+                    width: 350px;
+                    font-size: 28px;
+                  }
+                }
+                
+                @media (max-width: 991px) {
+                  .hero-container {
+                    min-height: 400px;
+                    padding: 30px 20px;
+                  }
+                
+                  .courses-grid {
+                    grid-template-columns: 1fr;
+                    padding: 0 20px;
+                  }
+                
+                  .hero-title {
+                    font-size: 36px;
+                  }
+                
+                  .search-button {
+                    width: 300px;
+                    font-size: 24px;
+                    padding: 10px 30px;
+                  }
+                
+                  .section-header {
+                    font-size: 28px;
+                    padding: 20px;
+                  }
+                
+                  .search-title {
+                    font-size: 28px;
+                  }
+                
+                  .form-label {
+                    font-size: 20px;
+                  }
+                
+                  .contact-title {
+                    font-size: 36px;
+                  }
+                
+                  .contact-subtitle {
+                    font-size: 28px;
+                  }
+                
+                  .contact-button {
+                    font-size: 24px;
+                    padding: 12px 30px;
+                  }
+                }
+                
+                @media (max-width: 768px) {
+                  .hero-container {
+                    min-height: 300px;
+                  }
+                
+                  .hero-title {
+                    font-size: 32px;
+                  }
+                
+                  .search-button {
+                    width: 250px;
+                    font-size: 20px;
+                  }
+                
+                  .course-title {
+                    font-size: 18px;
+                  }
+                
+                  .form-group {
+                    flex-direction: column;
+                    align-items: flex-start;
+                  }
+                
+                  .form-input {
+                    width: 100%;
+                  }
+                
+                  .age-inputs {
+                    width: 100%;
+                    justify-content: flex-start;
+                  }
+                }
+              &lt;/style&gt;
+              
+              &lt;section class="course-section"&gt;
+                &lt;div class="hero-container"&gt;
+                  &lt;img src="https://cdn.builder.io/api/v1/image/assets/TEMP/64c0c1f9a06b04540d2b021d93113659496375368186118ae15bdae9bdf44281?placeholderIfAbsent=true&apiKey=effc406a48774fb39f38f5578c8390cf" alt="Course hero banner" class="hero-image" /&gt;
+                  &lt;div class="hero-content"&gt;
+                    &lt;h1 class="hero-title"&gt;Гурток для вашої дитини&lt;/h1&gt;
+                    &lt;button class="search-button"&gt;Підібрати гурток 🔍&lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              
+                &lt;h2 class="section-header"&gt;Гуртки із відкритим набором&lt;/h2&gt;
+              
+                &lt;div class="courses-grid"&gt;
+                  &lt;article class="course-card"&gt;
+                    &lt;img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6dec9c241d53192bf0c20f11e6e07bf5b1cdee0de81485aa5b0bc4181f061851?placeholderIfAbsent=true&apiKey=effc406a48774fb39f38f5578c8390cf" alt="Mathematics for young children course" class="course-image" /&gt;
+                    &lt;h3 class="course-title"&gt;Математика для наймолодших&lt;/h3&gt;
+                    &lt;div class="course-meta"&gt;
+                      &lt;span class="age-range"&gt;Вік: 3-5 р.&lt;/span&gt;
+                      &lt;span class="age-icon"&gt;👶&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class="difficulty"&gt;
+                      &lt;span class="difficulty-label"&gt;Складність:&lt;/span&gt;
+                      &lt;span class="difficulty-icon"&gt;😁&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;p class="price"&gt;Вартість: 400 грн/міс&lt;/p&gt;
+                    &lt;button class="enroll-button"&gt;
+                      &lt;span class="enroll-text"&gt;Записатись&lt;/span&gt;
+                      &lt;span class="enroll-icon"&gt;✍&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;/article&gt;
+              
+                  &lt;article class="course-card"&gt;
+                    &lt;img src="https://cdn.builder.io/api/v1/image/assets/TEMP/fb16e329e474dfc7b890e9c69b581aa86be9fcb3d19314f09b749050d81ec73f?placeholderIfAbsent=true&apiKey=effc406a48774fb39f38f5578c8390cf" alt="English for admission course" class="course-image" /&gt;
+                    &lt;h3 class="course-title"&gt;Англійська для вступу&lt;/h3&gt;
+                    &lt;div class="course-meta"&gt;
+                      &lt;span class="age-range"&gt;Вік: 14-16р.&lt;/span&gt;
+                      &lt;span class="age-icon"&gt;🧑&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class="difficulty"&gt;
+                      &lt;span class="difficulty-label"&gt;Складність:&lt;/span&gt;
+                      &lt;span class="difficulty-icon"&gt;😱&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;p class="price"&gt;Вартість: 1200 грн/міс&lt;/p&gt;
+                    &lt;button class="enroll-button"&gt;
+                      &lt;span class="enroll-text"&gt;Записатись&lt;/span&gt;
+                      &lt;span class="enroll-icon"&gt;✍&lt;/span&gt;
+                    &lt;/button&gt;&lt;/article&gt;
+                    &lt;/div&gt;
+                  
+                    &lt;div class="courses-grid"&gt;
+                      &lt;article class="course-card"&gt;
+                        &lt;img src="https://cdn.builder.io/api/v1/image/assets/TEMP/27fd0897e0c678fd47cfe069c40a71ad2b5275e52ca9c69bb95152571527fff6?placeholderIfAbsent=true&apiKey=effc406a48774fb39f38f5578c8390cf" alt="Ukrainian language NMT preparation course" class="course-image" /&gt;
+                        &lt;h3 class="course-title"&gt;Підготовка до НМТ з Укр. Мови&lt;/h3&gt;
+                        &lt;div class="course-meta"&gt;
+                          &lt;span class="age-range"&gt;Вік: 14-16р.&lt;/span&gt;
+                          &lt;span class="age-icon"&gt;🧑&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class="difficulty"&gt;
+                          &lt;span class="difficulty-label"&gt;Складність:&lt;/span&gt;
+                          &lt;span class="difficulty-icon"&gt;😲&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;p class="price"&gt;Вартість: 900 грн/міс&lt;/p&gt;
+                        &lt;button class="enroll-button"&gt;
+                          &lt;span class="enroll-text"&gt;Записатись&lt;/span&gt;
+                          &lt;span class="enroll-icon"&gt;✍&lt;/span&gt;
+                        &lt;/button&gt;
+                      &lt;/article&gt;
+                  
+                      &lt;article class="course-card"&gt;
+                        &lt;img src="https://cdn.builder.io/api/v1/image/assets/TEMP/38e9d54947c470a3128d4dda34006270d009c4fe01dd4a3d9042ce07820fd1e2?placeholderIfAbsent=true&apiKey=effc406a48774fb39f38f5578c8390cf" alt="Programming for children course" class="course-image" /&gt;
+                        &lt;h3 class="course-title"&gt;Програмування для дітей&lt;/h3&gt;
+                        &lt;div class="course-meta"&gt;
+                          &lt;span class="age-range"&gt;Вік: 8-13р.&lt;/span&gt;
+                          &lt;span class="age-icon"&gt;🧒&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class="difficulty"&gt;
+                          &lt;span class="difficulty-label"&gt;Складність:&lt;/span&gt;
+                          &lt;span class="difficulty-icon"&gt;😱&lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;p class="price"&gt;Вартість: 1200 грн/міс&lt;/p&gt;
+                        &lt;button class="enroll-button"&gt;
+                          &lt;span class="enroll-text"&gt;Записатись&lt;/span&gt;
+                          &lt;span class="enroll-icon"&gt;✍&lt;/span&gt;
+                        &lt;/button&gt;
+                      &lt;/article&gt;
+                    &lt;/div&gt;
+                  
+                    &lt;section class="search-section"&gt;
+                      &lt;div class="search-container"&gt;
+                        &lt;form class="search-form"&gt;
+                          &lt;h2 class="search-title"&gt;Не знайшли те що шукали? 🔍&lt;/h2&gt;
+                          
+                          &lt;div class="form-group"&gt;
+                            &lt;label for="category" class="form-label"&gt;Категорія:&lt;/label&gt;
+                            &lt;input type="text" id="category" class="form-input" /&gt;
+                          &lt;/div&gt;
+                  
+                          &lt;div class="form-group"&gt;
+                            &lt;label for="age-from" class="form-label"&gt;Вік:&lt;/label&gt;
+                            &lt;div class="age-inputs"&gt;
+                              &lt;span&gt;від&lt;/span&gt;
+                              &lt;input type="number" id="age-from" class="age-input" /&gt;
+                              &lt;span&gt;до&lt;/span&gt;
+                              &lt;input type="number" id="age-to" class="age-input" /&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                  
+                          &lt;div class="difficulty-buttons"&gt;
+                            &lt;span class="form-label"&gt;Складність:&lt;/span&gt;
+                            &lt;button type="button" class="difficulty-button"&gt;😁&lt;/button&gt;
+                            &lt;button type="button" class="difficulty-button"&gt;😲&lt;/button&gt;
+                            &lt;button type="button" class="difficulty-button"&gt;😱&lt;/button&gt;
+                          &lt;/div&gt;
+                        &lt;/form&gt;
+                      &lt;/div&gt;
+                    &lt;/section&gt;
+                  
+                    &lt;h2 class="contact-title"&gt;Маєте запитання до сайту або менеджера?&lt;/h2&gt;
+                    &lt;p class="contact-subtitle"&gt;Зв'яжіться з нами через email 👇&lt;/p&gt;
+                    &lt;button class="contact-button"&gt;Написати нам 📩&lt;/button&gt;
+                  &lt;/section&gt;
+                  
+                            </pre>
+            </div>
+         </div>
+         <div id="task2" class="content-item">
+          <h3>Завдання 2</h3>
+          <p>Реалізувати фіксовану табличну верстку з визначеними розмірами колонок.</p>
+      </div>
+      <div id="fixed-table" class="content-item">
+          <h3>Фіксована таблична верстка</h3>
+          <p>Фіксована верстка використовує строго визначені розміри для колонок таблиці.</p>
+          <div class="code-example">
+              <h4>HTML код:</h4>
+              <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;Fixed Table Layout&lt;/title&gt;
+          &lt;style&gt;
+              body {
+                  margin: 0;
+                  padding: 0;
+              }
+      
+              table {
+                  width: 800px;
+                  border-collapse: collapse;
+                  margin: 0 auto;
+              }
+      
+              td {
+                  border: 1px solid black;
+                  padding: 10px;
+              }
+      
+              .header {
+                  background-color: #FFD700;
+                  height: 50px;
+              }
+      
+              .left-sidebar {
+                  background-color: #0000FF;
+                  width: 200px;
+                  height: 400px;
+              }
+      
+              .center {
+                  background-color: #FF0000;
+                  width: 150px;
+              }
+      
+              .right-content {
+                  background-color: #FFFFFF;
+                  width: 150px;
+              }
+      
+              .footer {
+                  background-color: #FFD700;
+                  height: 50px;
+              }
+          &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;table&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="4" class="header"&gt;1&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td class="left-sidebar"&gt;2&lt;/td&gt;
+                  &lt;td class="center"&gt;3&lt;/td&gt;
+                  &lt;td class="right-content"&gt;4&lt;/td&gt;
+                  &lt;td class="right-content"&gt;5&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="4" class="footer"&gt;6&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/table&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+              </pre>
+          </div>
+      </div>
+      
+      <div id="fluid-table" class="content-item">
+          <h3>Гумова таблична верстка</h3>
+          <p>Гумова верстка дозволяє таблиці адаптуватися до розмірів екрану.</p>
+          <div class="code-example">
+              <h4>HTML код:</h4>
+              <pre>
+      &lt;!DOCTYPE html&gt;
+      &lt;html lang="en"&gt;
+      &lt;head&gt;
+          &lt;meta charset="UTF-8"&gt;
+          &lt;title&gt;Fluid Table Layout&lt;/title&gt;
+          &lt;style&gt;
+              body {
+                  margin: 0;
+                  padding: 0;
+              }
+      
+              table {
+                  width: 100%;
+                  min-width: 600px;
+                  max-width: 1200px;
+                  border-collapse: collapse;
+                  margin: 0 auto;
+              }
+      
+              td {
+                  border: 1px solid black;
+                  padding: 10px;
+              }
+      
+              .header {
+                  background-color: #FFD700;
+                  height: 50px;
+              }
+      
+              .left-sidebar {
+                  background-color: #0000FF;
+                  width: 25%;
+                  height: 400px;
+              }
+      
+              .center {
+                  background-color: #FF0000;
+                  width: 25%;
+              }
+      
+              .right-content {
+                  background-color: #FFFFFF;
+                  width: 25%;
+              }
+      
+              .footer {
+                  background-color: #FFD700;
+                  height: 50px;
+              }
+          &lt;/style&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;table&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="4" class="header"&gt;1&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td class="left-sidebar"&gt;2&lt;/td&gt;
+                  &lt;td class="center"&gt;3&lt;/td&gt;
+                  &lt;td class="right-content"&gt;4&lt;/td&gt;
+                  &lt;td class="right-content"&gt;5&lt;/td&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                  &lt;td colspan="4" class="footer"&gt;6&lt;/td&gt;
+              &lt;/tr&gt;
+          &lt;/table&gt;
+      &lt;/body&gt;
+      &lt;/html&gt;
+              </pre>
+          </div>
+      </div>
+      <div id="fixed-block" class="content-item" data-content="fixed-block">
+        <h3>Фіксована блочна верстка</h3>
+        <p>Фіксована блочна верстка використовує блочні елементи зі строго фіксованими розмірами.</p>
+        <div class="code-example">
+            <h4>HTML код:</h4>
+            <pre>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang="uk"&gt;
+              &lt;head&gt;
+                  &lt;meta charset="UTF-8"&gt;
+                  &lt;title&gt;Fixed Block Layout&lt;/title&gt;
+                  &lt;style&gt;
+                      body {
+                          margin: 0;
+                          padding: 20px;
+                      }
+                      .container {
+                          width: 800px;
+                          margin: 0 auto;
+                          border: 1px solid black;
+                      }
+                      .section-1 {
+                          background-color: #FFD700;
+                          height: 50px;
+                      }
+                      .middle-section {
+                          display: flex;
+                          height: 300px;
+                      }
+                      .section-2 {
+                          background-color: #0000FF;
+                          width: 200px;
+                      }
+                      .section-3 {
+                          background-color: #FF0000;
+                          width: 200px;
+                      }
+                      .section-4 {
+                          background-color: white;
+                          width: 200px;
+                      }
+                      .section-5 {
+                          background-color: #FF0000;
+                          width: 200px;
+                      }
+                      .section-6 {
+                          background-color: #FFD700;
+                          height: 50px;
+                      }
+                  &lt;/style&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+                  &lt;div class="container"&gt;
+                      &lt;div class="section-1"&gt;1&lt;/div&gt;
+                      &lt;div class="middle-section"&gt;
+                          &lt;div class="section-2"&gt;2&lt;/div&gt;
+                          &lt;div class="section-3"&gt;3&lt;/div&gt;
+                          &lt;div class="section-4"&gt;4&lt;/div&gt;
+                          &lt;div class="section-5"&gt;5&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;div class="section-6"&gt;6&lt;/div&gt;
+                  &lt;/div&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+              
+            </pre>
+        </div>
+    </div>
+    <div id="fluid-block" class="content-item" data-content="fluid-block">
+      <h3>Гумова блочна верстка</h3>
+      <p>Гумова блочна верстка дозволяє блочним елементам адаптуватися до ширини екрану.</p>
+      <div class="code-example">
+          <h4>HTML код:</h4>
+          <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="uk"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;title&gt;Fluid Block Layout&lt;/title&gt;
+                &lt;style&gt;
+                    body {
+                        margin: 0;
+                        padding: 20px;
+                    }
+                    .container {
+                        width: 100%;
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        border: 1px solid black;
+                    }
+                    .section-1 {
+                        background-color: #FFD700;
+                        height: 50px;
+                    }
+                    .middle-section {
+                        display: flex;
+                        height: 300px;
+                    }
+                    .section-2 {
+                        background-color: #0000FF;
+                        width: 25%;
+                    }
+                    .section-3 {
+                        background-color: #FF0000;
+                        width: 25%;
+                    }
+                    .section-4 {
+                        background-color: white;
+                        width: 25%;
+                    }
+                    .section-5 {
+                        background-color: #FF0000;
+                        width: 25%;
+                    }
+                    .section-6 {
+                        background-color: #FFD700;
+                        height: 50px;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="section-1"&gt;1&lt;/div&gt;
+                    &lt;div class="middle-section"&gt;
+                        &lt;div class="section-2"&gt;2&lt;/div&gt;
+                        &lt;div class="section-3"&gt;3&lt;/div&gt;
+                        &lt;div class="section-4"&gt;4&lt;/div&gt;
+                        &lt;div class="section-5"&gt;5&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="section-6"&gt;6&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+          </pre>
+      </div>
+  </div>
+  
+    
+      
+      <div id="task3" class="content-item">
+          <h3>Завдання 3</h3>
+          <p></p>
+      </div>
+      
+      <div id="screenshot" class="content-item">
+          <h3>Скріншот сторінки</h3>
+          <img src="/reports/media/2.1.3.1.png" alt="">
+      </div>
+      
+      <div id="html" class="content-item">
+          <h3>HTML</h3>
+          <p>Повний HTML-код сторінки.</p>
+          <div class="code-example">
+              <h4>HTML код:</h4>
+              <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="uk"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;style&gt;
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                
+                        body {
+                            font-family: Arial, sans-serif;
+                        }
+                
+                        .tech-stack {
+                            background: #000;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            gap: 20px;
+                        }
+                
+                        .tech-item {
+                            width: 80px;
+                            height: 80px;
+                            background: #1a1a1a;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 15px;
+                        }
+                
+                        .benefits {
+                            background: #f8f8f8;
+                            padding: 40px 20px;
+                            display: flex;
+                            align-items: center;
+                            gap: 40px;
+                        }
+                
+                        .benefits-image {
+                            flex: 0 0 300px;
+                        }
+                
+                        .benefits-image img {
+                            width: 100%;
+                            height: auto;
+                        }
+                
+                        .benefits-list {
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                        }
+                
+                        .benefit-item {
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 10px;
+                        }
+                
+                        .checkmark {
+                            color: #4CAF50;
+                            font-weight: bold;
+                        }
+                
+                        .course-info {
+                            padding: 40px 20px;
+                            text-align: center;
+                        }
+                
+                        .course-title {
+                            font-size: 24px;
+                            margin-bottom: 40px;
+                        }
+                
+                        .features {
+                            display: flex;
+                            justify-content: center;
+                            gap: 40px;
+                            margin-top: 30px;
+                        }
+                
+                        .feature {
+                            flex: 1;
+                            max-width: 300px;
+                        }
+                
+                        .footer {
+                            background: #000;
+                            color: white;
+                            padding: 20px;
+                            display: flex;
+                            justify-content: center;
+                            gap: 20px;
+                        }
+                
+                        .social-icon {
+                            width: 30px;
+                            height: 30px;
+                            background: #333;
+                            border-radius: 4px;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class="tech-stack"&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="html-css-icon.png" alt="HTML/CSS"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="js-icon.png" alt="JavaScript"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="react-icon.png" alt="React"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="redux-icon.png" alt="Redux"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="ts-icon.png" alt="TypeScript"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="angular-icon.png" alt="Angular"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="github-icon.png" alt="GitHub"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="tech-item"&gt;
+                            &lt;img src="firebase-icon.png" alt="Firebase"&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="benefits"&gt;
+                        &lt;div class="benefits-image"&gt;
+                            &lt;img src="person.png" alt="Representative"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="benefits-list"&gt;
+                            &lt;div class="benefit-item"&gt;
+                                &lt;span class="checkmark"&gt;✓&lt;/span&gt;
+                                &lt;p&gt;НАВІТЬ У ЗРІЛОМУ ВІЦІ&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="benefit-item"&gt;
+                                &lt;span class="checkmark"&gt;✓&lt;/span&gt;
+                                &lt;p&gt;НАВІТЬ БЕЗ ПРОФІЛЬНОЇ ОСВІТИ ТА НАВИЧОК&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="benefit-item"&gt;
+                                &lt;span class="checkmark"&gt;✓&lt;/span&gt;
+                                &lt;p&gt;НАВІТЬ БЕЗ ЗНАННЯ АНГЛІЙСЬКОЇ&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="benefit-item"&gt;
+                                &lt;span class="checkmark"&gt;✓&lt;/span&gt;
+                                &lt;p&gt;НАВІТЬ БЕЗ ЗНАНЬ ПРОГРАМУВАННЯ&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;div class="course-info"&gt;
+                        &lt;h2 class="course-title"&gt;КУРС ПРОГРАМУВАННЯ JAVA З ПРАЦЕВЛАШТУВАННЯМ:&lt;/h2&gt;
+                        &lt;div class="features"&gt;
+                            &lt;div class="feature"&gt;
+                                &lt;h3&gt;СТАЖУВАННЯ В IT-КОМПАНІЇ&lt;/h3&gt;
+                                &lt;p&gt;Пройди себе на курсі і ще до закінчення навчання ми відправимо тебе на стажування в IT-компанію.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="feature"&gt;
+                                &lt;h3&gt;ТРИ ВИПУСКНИХ ПРОЕКТИ&lt;/h3&gt;
+                                &lt;p&gt;Наприкінці курсу ти будеш мати три проекти, з якими легко працевлаштуєшся.&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class="feature"&gt;
+                                &lt;h3&gt;ІНТЕНСИВНІСТЬ&lt;/h3&gt;
+                                &lt;p&gt;На відміну від інших наші студенти вчаться 6 разів на тиждень в продовж всього терміну.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                
+                    &lt;footer class="footer"&gt;
+                        &lt;div class="social-icon"&gt;
+                            &lt;img src="" alt=""&gt;
+                        &lt;/div&gt;
+                        &lt;div class="social-icon"&gt;&lt;/div&gt;
+                        &lt;div class="social-icon"&gt;&lt;/div&gt;
+                        &lt;div class="social-icon"&gt;&lt;/div&gt;
+                        &lt;div class="social-icon"&gt;&lt;/div&gt;
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                
+      </div>
+    </div>
+      
+      <div id="conclusions" class="content-item">
+        <h3>Висновки</h3>
+        <ul>
+            <li>Опановано техніки створення табличної верстки.</li>
+            <li>Реалізовано фіксовану та гумову верстку.</li>
+            <li>Вивчено основи CSS для стилізації таблиць.</li>
+            <li>Створено адаптивну таблицю для різних пристроїв.</li>
+        </ul>
+    </div>
+      <script>
+         document.querySelectorAll('.settings-btn').forEach(button => {
+             button.addEventListener('click', () => {
+                 const contentId = button.dataset.content;
+                 document.querySelectorAll('.content-item').forEach(item => {
+                     item.classList.remove('active-content');
+                 });
+                 document.getElementById(contentId).classList.add('active-content');
+             });
+         });
+                 
+      </script>
+   </body>
+</html>

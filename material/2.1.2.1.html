@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fixed Table Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        .header {
+            background-color: #FFD700;
+            height: 50px;
+        }
+        
+        .left-sidebar {
+            background-color: #0000FF;
+            width: 200px;
+            height: 400px;
+        }
+        
+        .center {
+            background-color: #FF0000;
+            width: 150px;
+        }
+        
+        .right-content {
+            background-color: #FFFFFF;
+            width: 150px;
+        }
+        
+        .footer {
+            background-color: #FFD700;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="header">1</td>
+        </tr>
+        <tr>
+            <td class="left-sidebar">2</td>
+            <td class="center">3</td>
+            <td class="right-content">4</td>
+            <td class="right-content">5</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="footer">6</td>
+        </tr>
+    </table>
+</body>
+</html>

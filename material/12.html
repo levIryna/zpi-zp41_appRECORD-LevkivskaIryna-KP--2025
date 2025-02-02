@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Фіксована блочна верстка</title>
+    <style>
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .header, .footer {
+            background-color: #FFD700;
+            height: 50px;
+        }
+        .sidebar {
+            background-color: #0000FF;
+            width: 200px;
+            height: 400px;
+            float: left;
+        }
+        .content {
+            background-color: #FF0000;
+            width: 600px;
+            height: 400px;
+            float: left;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Заголовок</div>
+        <div class="clearfix">
+            <div class="sidebar">Бічна панель</div>
+            <div class="content">Контент</div>
+        </div>
+        <div class="footer">Підвал</div>
+    </div>
+</body>
+</html>
