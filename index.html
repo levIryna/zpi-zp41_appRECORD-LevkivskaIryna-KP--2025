@@ -5,138 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Звіти з лабораторних робіт</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 
 <body>
     <header>
         <div class="header-text">
             <h1>Звіти з лабораторних робіт</h1>
-            <p>З дисципліни: Програмування інтернет-застосувань</p>
-            <p>Студентка групи ІПЗ_22_301</p>
+            <p>З дисципліни: Основи клієнтської розробки</p>
+            <p>Студентки групи ЗПІ-зп41 Левківської Ірини</p>
         </div>
-        <img src="student-photo.jpg" alt="Фото студента" class="student-photo">
+        <img src="/myphoto.jpg" alt="Фото студента" class="student-photo">
     </header>
 
     <!-- Навігація для вибору лабораторних робіт -->
     <nav>
-        <button onclick="showLab('lab1')">Лабораторна робота 1</button>
-        <button onclick="showLab('lab1_2')">Лабораторна робота 1.2</button>
-        <button onclick="showLab('lab2')">Лабораторна робота 2</button>
-        <button onclick="showLab('lab2_2')">Лабораторна робота 2.2</button>
-        <button onclick="showLab('lab3')">Лабораторна робота 3</button>
-        <button onclick="showLab('lab3_2')">Лабораторна робота 3.2</button>
+        <!--<button onclick="showLab('lab1')">Лабораторна робота 1</button>-->
+        <!--<button onclick="showLab('lab1_2')">Лабораторна робота 1.2</button>-->
+        <!--<button onclick="showLab('lab2')">Лабораторна робота 2</button>-->
+        <!--<button onclick="showLab('lab2_2')">Лабораторна робота 2.2</button>-->
+        <!--<button onclick="showLab('lab3')">Лабораторна робота 3</button>-->
+        <!--<button onclick="showLab('lab3_2')">Лабораторна робота 3.2</button>-->
         <button onclick="showLab('lab4')">Лабораторна робота 4</button>
-        <button onclick="showLab('lab4_2')">Лабораторна робота 4.2</button>
         <button onclick="showLab('lab5')">Лабораторна робота 5</button>
-        <button onclick="showLab('lab5_2')">Лабораторна робота 5.2</button>
+        <button onclick="showLab('lab6')">Лабораторна робота 6</button>
     </nav>
 
     <main>
+        
         <!-- Контент для кожної лабораторної роботи -->
         <div class="content">
             <!-- Лабораторна робота 1 -->
             <div id="lab1" class="content-section">
                 <div class="sidebar">
-                    <button onclick="showSection('description', 'lab1')">Опис предметного середовища</button>
-                    <button onclick="showSection('goal', 'lab1')">Тема, мета, місце розташування сайту та звіту</button>
-                    <button onclick="showSection('structure', 'lab1')">СТРУКТУРА ДОКУМЕНТА</button>
-                    <button onclick="showSection('tables', 'lab1')">HTML-код таблиць</button>
-                    <button onclick="showSection('list', 'lab1')">HTML-код списку</button>
-                    <button onclick="showSection('images', 'lab1')">HTML-код зображення</button>
-                    <button onclick="showSection('conclusion', 'lab1')">Висновки</button>
+                    <!--<button onclick="showSection('description', 'lab1')">Опис предметного середовища</button>-->
+                    <!--<button onclick="showSection('goal', 'lab1')">Тема, мета, місце розташування сайту та звіту</button>-->
+                    <!--<button onclick="showSection('structure', 'lab1')">СТРУКТУРА ДОКУМЕНТА</button>-->
+                    <!--<button onclick="showSection('tables', 'lab1')">HTML-код таблиць</button>-->
+                   <!-- <button onclick="showSection('list', 'lab1')">HTML-код списку</button>-->
+                    <!--<button onclick="showSection('images', 'lab1')">HTML-код зображення</button>-->
+                    <!--<button onclick="showSection('conclusion', 'lab1')">Висновки</button>-->
                 </div>
-                <div id="description" class="lab1-section content-section text-content">
-                    <h4>Опис предметного середовища</h4>
-                    <p>Бізнес логіка:</p>
-                    <p>
-                        <strong>Тема:</strong> Створення веб-сайту для салону краси "The Keratin"<br />
-                        <strong>Мета проєкту:</strong>Забезпечити зручний і сучасний спосіб для клієнтів
-                        взаємодіяти із салоном краси. Це включає онлайн-запис, доступ до
-                        інформації про послуги та команду салону, відкриті вакансії, а також
-                        представлення продукції салону.<br />
-                    </p>
-                    <p>
-                        <strong>Сценарій використання сайту для клієнтів:</strong>
-                    </p>
-                    <ul>
-                        <li>Клієнт обирає послугу, майстра та записується онлайн.</li>
-                        <li>Клієнт переглядає інформацію про салон.</li>
-                        <li>Клієнт вивчає ціни послуг, які надані салоном.</li>
-                        <li>Пошукач вакансій подає заявку на роботу.</li>
-                        <li>Клієнт переглядає та замовляє продукцію.</li>
-                    </ul>
-                    <p>
-                        <strong>Сценарій використання сайту для адміністрації:</strong>
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>Управління послугами:</strong> Додавати, редагувати та видаляти послуги, що
-                            пропонуються салоном,
-                            включаючи опис, ціну та тривалість.
-                        </li>
-                        <li>
-                            <strong>Керування записами клієнтів:</strong> Перегляд, підтвердження або скасування
-                            онлайн-записів клієнтів, а
-                            також управління графіком роботи майстрів.
-                        </li>
-                        <li>
-                            <strong>Управління командою:</strong> Додавати, редагувати та видаляти інформацію про
-                            майстрів, їхні
-                            спеціалізації та доступність.
-                        </li>
-                        <li>
-                            <strong>Вакансії:</strong> Створення та редагування відкритих вакансій, перегляд поданих
-                            заявок від кандидатів,
-                            управління процесом найму.
-                        </li>
-                        <li>
-                            <strong>Продаж продукції:</strong> Додавати, редагувати та видаляти товари, управляти
-                            запасами, а також
-                            переглядати замовлення клієнтів.
-                        </li>
-                    </ul>
+                <!--<div id="description" class="lab1-section content-section text-content">-->
+                    <!--<h4>Опис предметного середовища</h4>-->
+                    <!--<p>Бізнес логіка:</p>-->
+                    <!--<p>-->
+                     <!--   <strong>Тема:</strong> Створення веб-сайту для салону краси "The Keratin"<br />-->
+                     <!--  <strong>Мета проєкту:</strong>Забезпечити зручний і сучасний спосіб для клієнтів-->
+                       <!-- взаємодіяти із салоном краси. Це включає онлайн-запис, доступ до-->
+                       <!-- інформації про послуги та команду салону, відкриті вакансії, а також-->
+                       <!-- представлення продукції салону.<br />-->
+                   <!-- </p>-->
+                   <!-- <p>-->
+                    <!--    <strong>Сценарій використання сайту для клієнтів:</strong>-->
+                    <!--</p>-->
+                   <!-- <ul>-->
+                     <!--   <li>Клієнт обирає послугу, майстра та записується онлайн.</li>-->
+                     <!--   <li>Клієнт переглядає інформацію про салон.</li>-->
+                      <!--  <li>Клієнт вивчає ціни послуг, які надані салоном.</li>-->
+                       <!-- <li>Пошукач вакансій подає заявку на роботу.</li>-->
+                       <!-- <li>Клієнт переглядає та замовляє продукцію.</li>-->
+                  <!--  </ul>-->
+                   <!-- <p>-->
+                       <!-- <strong>Сценарій використання сайту для адміністрації:</strong>-->
+                    <!--</p>-->
+                    <!--<ul>-->
+                      <!--  <li><strong>Управління послугами:</strong> Додавати, редагувати та видаляти послуги, що-->
+                       <!--     пропонуються салоном,-->
+                       <!--     включаючи опис, ціну та тривалість.</li>-->
+                       <!-- <li><strong>Керування записами клієнтів:</strong> Перегляд, підтвердження або скасування-->
+                       <!--     онлайн-записів клієнтів, а -->
+                        
                 </div>
                 <div id="goal" class="lab1-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
-                        РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.
-                    </p><br />
-                    <p>
-                        <strong>Мета:</strong>придбати практичні навички роботи з HTML-документом, таблицями, ,
+                    <p><strong>Тема:</strong>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
+                        РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p><br />
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з HTML-документом, таблицями, ,
                         зображеннями, посиланнями, списками, формами
                         Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних
                         робіт.
                     </p>
-                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                        Посилання на
-                        репозиторій на живу сторінку власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій звітного HTML-документа
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій на живу сторінку звітного HTML-документ
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій з самостійними роботами
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій живу сторінку з самостійними роботами
-                    </a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій звітного HTML-документа</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій на живу сторінку звітного HTML-документ</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій з самостійними роботами</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
                 <div id="structure" class="lab1-section content-section text-content">
                     <h4>СТРУКТУРА ДОКУМЕНТА</h4>
-                    <p>
-                        &lt;!DOCTYPE html&gt;
+                    <p>&lt;!DOCTYPE html&gt;
                         &lt;html lang="uk"&gt;
                         &lt;head&gt;
                         &lt;meta charset="UTF-8"&gt;
@@ -288,16 +252,14 @@
                     </p>
                     <p>
                         <strong>Основні елементи таблиць:</strong>
-                        <ul>
-                            <li><code>&lt;table&gt;</code>: оголошує саму таблицю.</li>
-                            <li><code>&lt;tr&gt;</code> (table row): визначає рядок таблиці.</li>
-                            <li>
-                                <code>&lt;th&gt;</code> (table header): визначає заголовок стовпця (зазвичай текст
-                                відображається жирним шрифтом
-                                та по центру).
-                            </li>
-                            <li><code>&lt;td&gt;</code> (table data): визначає клітинку з даними в рядку таблиці.</li>
-                        </ul>
+                    <ul>
+                        <li><code>&lt;table&gt;</code>: оголошує саму таблицю.</li>
+                        <li><code>&lt;tr&gt;</code> (table row): визначає рядок таблиці.</li>
+                        <li><code>&lt;th&gt;</code> (table header): визначає заголовок стовпця (зазвичай текст
+                            відображається жирним шрифтом
+                            та по центру).</li>
+                        <li><code>&lt;td&gt;</code> (table data): визначає клітинку з даними в рядку таблиці.</li>
+                    </ul>
                     </p>
                     <p>
                         <strong>Приклад:</strong>
@@ -325,11 +287,11 @@
                     </p>
                     <p>
                         <strong>Основні елементи списків:</strong>
-                        <ul>
-                            <li><code>&lt;ul&gt;</code>: ненумерований список (unordered list).</li>
-                            <li><code>&lt;ol&gt;</code>: нумерований список (ordered list).</li>
-                            <li><code>&lt;li&gt;</code>: пункт списку (list item).</li>
-                        </ul>
+                    <ul>
+                        <li><code>&lt;ul&gt;</code>: ненумерований список (unordered list).</li>
+                        <li><code>&lt;ol&gt;</code>: нумерований список (ordered list).</li>
+                        <li><code>&lt;li&gt;</code>: пункт списку (list item).</li>
+                    </ul>
                     </p>
                     <p>
                         <strong>Приклад ненумерованого списку:</strong>
@@ -361,17 +323,15 @@
                     </p>
                     <p>
                         <strong>Основні елементи зображень:</strong>
+                    <ul>
+                        <li><code>&lt;img&gt;</code>: використовується для вставлення зображення. Основні атрибути:</li>
                         <ul>
-                            <li><code>&lt;img&gt;</code>: використовується для вставлення зображення. Основні атрибути:</li>
-                            <ul>
-                                <li><code>src</code>: вказує URL-адресу зображення.</li>
-                                <li>
-                                    <code>alt</code>: альтернативний текст, який відображається, якщо зображення не може
-                                    бути завантажено, або
-                                    використовується для доступності.
-                                </li>
-                            </ul>
+                            <li><code>src</code>: вказує URL-адресу зображення.</li>
+                            <li><code>alt</code>: альтернативний текст, який відображається, якщо зображення не може
+                                бути завантажено, або
+                                використовується для доступності.</li>
                         </ul>
+                    </ul>
                     </p>
                     <p>
                         <strong>Приклад:</strong>
@@ -382,30 +342,24 @@
                 </div>
                 <div id="conclusion" class="lab1-section content-section text-content">
                     <h4>Висновки</h4>
-                    <p>
-                        Створення веб-сайту для салону краси є важливим кроком у забезпеченні ефективної взаємодії з
+                    <p>Створення веб-сайту для салону краси є важливим кроком у забезпеченні ефективної взаємодії з
                         клієнтами. Це дозволяє
                         клієнтам зручно записуватися на послуги, переглядати інформацію про команди та послуги, що
                         підвищує загальний рівень
                         задоволеності. Наявність веб-сайту також суттєво підвищує видимість салону в Інтернеті, що є
                         критично важливим для
                         залучення нових клієнтів. Сайт стає візитною карткою бізнесу, що демонструє його професіоналізм
-                        та надійність.
-                    </p>
+                        та надійність.</p>
                 </div>
             </div>
 
             <!-- Лабораторна робота 1_2 -->
             <div id="lab1_2" class="content-section">
                 <div class="sidebar">
-                    <button onclick="showSection('goal-1_2', 'lab1_2')">
-                        Тема, мета, місце розташування сайту та
-                        звіту
-                    </button>
-                    <button onclick="showSection('styleConnection', 'lab1_2')">
-                        СПОСОБИ ПІДКЛЮЧЕННЯ СТИЛІВ з
-                        прикладами
-                    </button>
+                    <button onclick="showSection('goal-1_2', 'lab1_2')">Тема, мета, місце розташування сайту та
+                        звіту</button>
+                    <button onclick="showSection('styleConnection', 'lab1_2')">СПОСОБИ ПІДКЛЮЧЕННЯ СТИЛІВ з
+                        прикладами</button>
                     <button onclick="showSection('selectors', 'lab1_2')">СЕЛЕКТОРИ</button>
                     <button onclick="showSection('tagSelector', 'lab1_2')">Селектор тегу</button>
                     <button onclick="showSection('classSelector', 'lab1_2')">Селектор класу</button>
@@ -418,54 +372,36 @@
                     <button onclick="showSection('conclusions-1_2', 'lab1_2')">Висновки</button>
                 </div>
                 <div id="goal-1_2" class="lab1_2-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ
-                        ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.
-                    </p><br />
-                    <p>
-                        <strong>Мета:</strong>придбати практичні навички роботи з селекторами: тегів, класів,
+                    <p><strong>Тема:</strong>КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ
+                        ТЕКСТОВИХ ЕЛЕМЕНТІВ В HTML-ДОКУМЕНТАХ.</p><br />
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з селекторами: тегів, класів,
                         ідентифікаторів; списками, різноманітними властивостями
                         кольору і фону, оформленням текстових елементів/
                     </p>
-                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                        Посилання на
-                        репозиторій на живу сторінку власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій звітного HTML-документа
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій на живу сторінку звітного HTML-документ
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій з самостійними роботами
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій живу сторінку з самостійними роботами
-                    </a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій звітного HTML-документа</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій на живу сторінку звітного HTML-документ</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій з самостійними роботами</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
                 <div id="styleConnection" class="lab1_2-section content-section text-content">
                     <h2>Способи підключення стилів</h2>
-
+            
                     <h3>1. Вбудовані стилі (Inline Styles)</h3>
-                    <p>
-                        Стилі додаються безпосередньо до HTML-елемента через атрибут <code>style</code>. Це зручно для
+                    <p>Стилі додаються безпосередньо до HTML-елемента через атрибут <code>style</code>. Це зручно для
                         одноразового
-                        форматування елементів, але не рекомендується для великих проєктів.
-                    </p>
+                        форматування елементів, але не рекомендується для великих проєктів.</p>
                     <pre><code>&lt;h1 style="color: blue; font-size: 24px;"&gt;Текст із вбудованим стилем&lt;/h1&gt;</code></pre>
-
+            
                     <h3>2. Внутрішні стилі (Internal Styles)</h3>
-                    <p>
-                        Внутрішні стилі додаються в документ за допомогою блоку <code>&lt;style&gt;</code> у секції
+                    <p>Внутрішні стилі додаються в документ за допомогою блоку <code>&lt;style&gt;</code> у секції
                         <code>&lt;head&gt;</code>. Це зручно для форматування сторінки, яка не має зовнішнього файлу
                         стилів.
                     </p>
@@ -480,10 +416,9 @@
                                 &lt;body&gt;
                                     &lt;h1&gt;Текст із внутрішнім стилем&lt;/h1&gt;
                                 &lt;/body&gt;</code></pre>
-
+            
                     <h3>3. Зовнішні стилі (External Styles)</h3>
-                    <p>
-                        Зовнішні стилі підключаються через окремий CSS-файл за допомогою тега <code>&lt;link&gt;</code> у
+                    <p>Зовнішні стилі підключаються через окремий CSS-файл за допомогою тега <code>&lt;link&gt;</code> у
                         секції
                         <code>&lt;head&gt;</code>. Це найпоширеніший спосіб, який дозволяє розділити HTML і CSS-код,
                         покращуючи
@@ -495,10 +430,9 @@
                                 &lt;body&gt;
                                     &lt;h1&gt;Текст із зовнішнім стилем&lt;/h1&gt;
                                 &lt;/body&gt;</code></pre>
-
+            
                     <h3>4. Підключення за допомогою @import</h3>
-                    <p>
-                        Правило <code>@import</code> дозволяє підключати один або більше зовнішніх CSS-файлів у головному
+                    <p>Правило <code>@import</code> дозволяє підключати один або більше зовнішніх CSS-файлів у головному
                         CSS-файлі. Це
                         менш популярний метод, оскільки він має певні обмеження в порівнянні з
                         <code>&lt;link&gt;</code>.
@@ -513,52 +447,46 @@
                 <div id="selectors" class="lab1_2-section content-section text-content">
                     <h2>Селектори</h2>
                     <p>Цей блок демонструє використання CSS-селекторів для вибору елементів веб-сторінки.</p>
-
+            
                     <!-- Селектор за тегом -->
                     <div>
                         <h3>Селектор за тегом</h3>
                         <p>Вибирає всі елементи, що мають певний тег. Наприклад, <code>p</code> вибирає всі абзаци.</p>
                         <code>&lt;p&gt;Текст абзацу&lt;/p&gt;</code>
                     </div>
-
+            
                     <!-- Селектор за класом -->
                     <div>
                         <h3>Селектор за класом</h3>
-                        <p>
-                            Вибирає всі елементи з певним класом. Наприклад, <code>.example</code> вибирає всі елементи з
+                        <p>Вибирає всі елементи з певним класом. Наприклад, <code>.example</code> вибирає всі елементи з
                             класом
-                            "example".
-                        </p>
+                            "example".</p>
                         <code>&lt;div class="example"&gt;Текст&lt;/div&gt;</code>
                     </div>
-
+            
                     <!-- Селектор за ідентифікатором -->
                     <div>
                         <h3>Селектор за ідентифікатором</h3>
-                        <p>
-                            Вибирає елемент за його унікальним ідентифікатором. Наприклад, <code>#unique</code> вибирає
+                        <p>Вибирає елемент за його унікальним ідентифікатором. Наприклад, <code>#unique</code> вибирає
                             елемент з id
-                            "unique".
-                        </p>
+                            "unique".</p>
                         <code>&lt;div id="unique"&gt;Унікальний елемент&lt;/div&gt;</code>
                     </div>
-
+            
                     <!-- Селектор за атрибутом -->
                     <div>
                         <h3>Селектор за атрибутом</h3>
-                        <p>
-                            Вибирає елементи, що мають певний атрибут або його значення. Наприклад,
+                        <p>Вибирає елементи, що мають певний атрибут або його значення. Наприклад,
                             <code>[type="text"]</code> вибирає
                             всі елементи з атрибутом type="text".
                         </p>
                         <code>&lt;input type="text"&gt;</code>
                     </div>
-
+            
                     <!-- Комбінація селекторів -->
                     <div>
                         <h3>Комбінація селекторів</h3>
-                        <p>
-                            Ви можете комбінувати селектори для більш точного вибору елементів, наприклад,
+                        <p>Ви можете комбінувати селектори для більш точного вибору елементів, наприклад,
                             <code>div.example p</code>
                             вибирає всі абзаци всередині елементів з класом "example".
                         </p>
@@ -567,15 +495,13 @@
                 </div>
                 <div id="tagSelector" class="lab1_2-section content-section text-content">
                     <h2>Селектор тегу</h2>
-
-                    <p>
-                        У цьому прикладі ми використовуємо селектор тегу <code>&lt;h1&gt;</code>, щоб застосувати стилі
-                        до заголовка.
-                    </p>
-
+            
+                    <p>У цьому прикладі ми використовуємо селектор тегу <code>&lt;h1&gt;</code>, щоб застосувати стилі
+                        до заголовка.</p>
+            
                     <h3>HTML-код:</h3>
                     <pre>
-                    <code>
+                                    <code>
                             &lt;header&gt;
                                 &lt;div class="logo"&gt;
                                     &lt;h1&gt;THE KERATIN&lt;/h1&gt;
@@ -583,10 +509,10 @@
                             &lt;/header&gt;
                                     </code>
                                 </pre>
-
+            
                     <h3>CSS-код:</h3>
                     <pre>
-                    <code>
+                                    <code>
                             /* Стиль для тегу h1 */
                             h1 {
                                 font-family: 'Arial', sans-serif;
@@ -600,18 +526,17 @@
                             }
                                     </code>
                                 </pre>
-
+            
                     <h3>Результат у браузері:</h3>
-                    <p>
-                        Цей CSS-код змінить вигляд тексту "THE KERATIN" у заголовку, задавши йому більший розмір шрифту,
+                    <p>Цей CSS-код змінить вигляд тексту "THE KERATIN" у заголовку, задавши йому більший розмір шрифту,
                         центроване
-                        вирівнювання, колір фону, і закруглені краї.
-                    </p>
-
+                        вирівнювання, колір фону, і закруглені краї.</p>
+            
                     <!-- Відображення самого результату -->
                     <header>
                         <div class="logo">
-                            <h1 style="font-family: 'Arial', sans-serif; font-size: 2.5em; color: #394C60; text-align: center; margin: 0; padding: 20px; background-color: #EFECE7; border-radius: 8px;">
+                            <h1
+                                style="font-family: 'Arial', sans-serif; font-size: 2.5em; color: #394C60; text-align: center; margin: 0; padding: 20px; background-color: #EFECE7; border-radius: 8px;">
                                 THE KERATIN
                             </h1>
                         </div>
@@ -619,16 +544,14 @@
                 </div>
                 <div id="classSelector" class="lab1_2-section content-section text-content">
                     <h2>Селектор класу</h2>
-
-                    <p>
-                        У цьому прикладі ми використовуємо селектор класу <code>.service-item</code>, щоб стилізувати
+            
+                    <p>У цьому прикладі ми використовуємо селектор класу <code>.service-item</code>, щоб стилізувати
                         блоки послуг у
-                        нашому веб-застосунку.
-                    </p>
-
+                        нашому веб-застосунку.</p>
+            
                     <h3>HTML-код:</h3>
                     <pre>
-                    <code>
+                                                    <code>
                                             &lt;div class="services"&gt;
                                                 &lt;h3&gt;Наші послуги&lt;/h3&gt;
                                                 &lt;div class="service-grid"&gt;
@@ -652,10 +575,10 @@
                                             &lt;/div&gt;
                                                     </code>
                                                 </pre>
-
+            
                     <h3>CSS-код:</h3>
                     <pre>
-                    <code>
+                                                    <code>
                                             /* Стиль для елементів з класом service-item */
                                             .service-item {
                                                 display: block;
@@ -675,35 +598,33 @@
                                             }
                                                     </code>
                                                 </pre>
-
+            
                     <h3>Результат у браузері:</h3>
-                    <p>
-                        Цей CSS-код змінює вигляд блоків з послугами, роблячи їх центрованими, з кольором фону та
+                    <p>Цей CSS-код змінює вигляд блоків з послугами, роблячи їх центрованими, з кольором фону та
                         анімацією при
-                        наведенні.
-                    </p>
-
+                        наведенні.</p>
+            
                     <!-- Відображення самого результату -->
                     <div class="services">
                         <h3>Наші послуги</h3>
                         <div class="service-grid">
                             <a href="#" class="service-item"
-                               style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
+                                style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
                                 <p>Макіяж</p>
                                 <img src="make-up.jpeg" alt="Макіяж">
                             </a>
                             <a href="#" class="service-item"
-                               style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
+                                style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
                                 <p>Фарбування</p>
                                 <img src="hair.jpg" alt="Волосся">
                             </a>
                             <a href="#" class="service-item"
-                               style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
+                                style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
                                 <p>Брейди</p>
                                 <img src="braids.jpeg" alt="Брейди">
                             </a>
                             <a href="#" class="service-item"
-                               style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
+                                style="display: block; text-align: center; background-color: #EFECE7; padding: 15px; margin: 10px; border-radius: 8px; color: #394C60; text-decoration: none;">
                                 <p>Манікюр</p>
                                 <img src="nails.jpeg" alt="Манікюр">
                             </a>
@@ -711,11 +632,9 @@
                     </div>
                 </div>
                 <div id="idSelector" class="lab1_2-section content-section text-content">
-                    <p>
-                        У цьому прикладі ми використовуємо селектор ідентифікатора <code>#appointment-form</code>, щоб
+                    <p>У цьому прикладі ми використовуємо селектор ідентифікатора <code>#appointment-form</code>, щоб
                         стилізувати форму
-                        запису на процедуру у нашому веб-застосунку.
-                    </p>
+                        запису на процедуру у нашому веб-застосунку.</p>
                     <h3>HTML код</h3>
                     <pre><code>
                                                 &lt;div class="appointment-form" id="appointment-form"&gt;
@@ -746,7 +665,7 @@
                                                     &lt;/form&gt;
                                                 &lt;/div&gt;
                                                         </code></pre>
-
+            
                     <h3>CSS код</h3>
                     <pre><code>
                                                 #appointment-form {
@@ -789,36 +708,31 @@
                                                     background-color: #2980b9;
                                                 }
                                                         </code></pre>
-
-
+            
+            
                     <p>У браузері форма для запису на процедуру виглядатиме так:</p>
                     <img src="form-on-web-site.png" alt="Скріншот форми запису на процедуру">
-
+            
                 </div>
                 <div id="otherSelectors" class="lab1_2-section content-section text-content">
                     <h2>Інші селектори</h2>
-
-                    <p>
-                        У цьому прикладі ми застосуємо різні типи CSS-селекторів, такі як сусідні, дочірні селектори,
+            
+                    <p>У цьому прикладі ми застосуємо різні типи CSS-селекторів, такі як сусідні, дочірні селектори,
                         селектор атрибута
-                        та універсальний селектор.
-                    </p>
-
+                        та універсальний селектор.</p>
+            
                     <h3>1. Сусідні селектори</h3>
-                    <p>
-                        Сусідні селектори дозволяють вибирати елементи, які йдуть безпосередньо після іншого елемента.
+                    <p>Сусідні селектори дозволяють вибирати елементи, які йдуть безпосередньо після іншого елемента.
                     </p>
                     <pre><code>
                                             .service-item + .service-item {
                                                 margin-left: 20px;
                                             }
                                                 </code></pre>
-                    <p>
-                        У цьому прикладі кожен елемент з класом <code>.service-item</code> отримає лівий відступ, якщо
+                    <p>У цьому прикладі кожен елемент з класом <code>.service-item</code> отримає лівий відступ, якщо
                         перед ним є інший
-                        елемент з таким самим класом.
-                    </p>
-
+                        елемент з таким самим класом.</p>
+            
                     <h3>2. Дочірні селектори</h3>
                     <p>Дочірні селектори дозволяють вибирати елементи, які є прямими нащадками іншого елемента.</p>
                     <pre><code>
@@ -827,12 +741,11 @@
                                                 padding: 10px;
                                             }
                                                 </code></pre>
-                    <p>
-                        У цьому прикладі всі елементи з класом <code>.service-item</code>, які є прямими нащадками
+                    <p>У цьому прикладі всі елементи з класом <code>.service-item</code>, які є прямими нащадками
                         елемента з класом
                         <code>.service-grid</code>, отримають обведення та відступи.
                     </p>
-
+            
                     <h3>3. Селектор атрибута</h3>
                     <p>Селектор атрибута дозволяє вибирати елементи за значенням їх атрибута.</p>
                     <pre><code>
@@ -840,12 +753,11 @@
                                                 border-color: #3498db;
                                             }
                                                 </code></pre>
-                    <p>
-                        У цьому прикладі ми використовуємо селектор атрибута для вибору всіх елементів
+                    <p>У цьому прикладі ми використовуємо селектор атрибута для вибору всіх елементів
                         <code>&lt;input&gt;</code> з
                         атрибутом <code>type="email"</code> і встановлюємо для них синій колір рамки.
                     </p>
-
+            
                     <h3>4. Універсальний селектор</h3>
                     <p>Універсальний селектор вибирає всі елементи на сторінці.</p>
                     <pre><code>
@@ -855,39 +767,31 @@
                                                 padding: 0;
                                             }
                                                 </code></pre>
-                    <p>
-                        Цей універсальний селектор скидає відступи і додає <code>box-sizing: border-box;</code> до всіх
+                    <p>Цей універсальний селектор скидає відступи і додає <code>box-sizing: border-box;</code> до всіх
                         елементів на
-                        сторінці, що допомагає в керуванні розмірами елементів.
-                    </p>
+                        сторінці, що допомагає в керуванні розмірами елементів.</p>
                 </div>
                 <div id="googleFonts" class="lab1_2-section content-section text-content">
                     <h2>Шрифти Google Fonts</h2>
-
-                    <p>
-                        У цьому прикладі ми підключаємо шрифт <strong>Roboto</strong> за допомогою Google Fonts і
+            
+                    <p>У цьому прикладі ми підключаємо шрифт <strong>Roboto</strong> за допомогою Google Fonts і
                         використовуємо його для
-                        стилізації тексту на сайті.
-                    </p>
+                        стилізації тексту на сайті.</p>
                     <img src="google-fonts-connection.png" alt="Підключення шрифтів Google Fonts в коді" class="screen-img " />
                     <p>Застосування шрифта <strong>Roboto</strong> для основного тексту на сторінці:</p>
                     <img src="roboto-font-example1.png" alt="Шрифт Roboto на сайті" class="screen-img " />
                 </div>
                 <div id="cssTablesBackgroundLists" class="lab1_2-section content-section text-content">
                     <h2>CSS: Шрифти Текст Таблиці Фон Контур Списки CSS Просунутий</h2>
-
-                    <p>
-                        У цьому розділі ми демонструємо різні техніки стилізації тексту, таблиць, списків та фонів за
+            
+                    <p>У цьому розділі ми демонструємо різні техніки стилізації тексту, таблиць, списків та фонів за
                         допомогою каскадних
-                        таблиць стилів (CSS).
-                    </p>
-
+                        таблиць стилів (CSS).</p>
+            
                     <h3>1. Шрифти</h3>
-                    <p>
-                        Для стилізації тексту на сайті ми використовуємо шрифт <strong>Roboto</strong> з Google Fonts, а
+                    <p>Для стилізації тексту на сайті ми використовуємо шрифт <strong>Roboto</strong> з Google Fonts, а
                         також стильове
-                        оформлення для заголовків і абзаців.
-                    </p>
+                        оформлення для заголовків і абзаців.</p>
                     <pre><code>
                                                 &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
                                             
@@ -900,10 +804,9 @@
                                                     font-weight: bold;
                                                 }
                                                 </code></pre>
-
+            
                     <h3>2. Контури</h3>
-                    <p>
-                        Контури додаються до елементів за допомогою властивості <code>text-shadow</code> для тексту і
+                    <p>Контури додаються до елементів за допомогою властивості <code>text-shadow</code> для тексту і
                         <code>box-shadow</code> для контейнерів.
                     </p>
                     <pre><code>
@@ -915,10 +818,9 @@
                                                     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                                                 }
                                                 </code></pre>
-
+            
                     <h3>3. Фон</h3>
-                    <p>
-                        Фон для елементів може бути однотонним або градієнтним. Ось приклад градієнтного фону для секцій:
+                    <p>Фон для елементів може бути однотонним або градієнтним. Ось приклад градієнтного фону для секцій:
                     </p>
                     <pre><code>
                                                 .content-section {
@@ -927,10 +829,9 @@
                                                     border-radius: 8px;
                                                 }
                                                 </code></pre>
-
+            
                     <h3>4. Колір тексту</h3>
-                    <p>
-                        Для зміни кольору тексту використовуються властивості <code>color</code> та
+                    <p>Для зміни кольору тексту використовуються властивості <code>color</code> та
                         <code>background-color</code>.
                         Приклад для заголовків:
                     </p>
@@ -947,10 +848,9 @@
                                                     color: #e74c3c;
                                                 }
                                                 </code></pre>
-
+            
                     <h3>5. CSS-властивості для таблиць</h3>
-                    <p>
-                        Таблиці можна стилізувати за допомогою CSS, додаючи контури, відступи та змінюючи кольори фону.
+                    <p>Таблиці можна стилізувати за допомогою CSS, додаючи контури, відступи та змінюючи кольори фону.
                     </p>
                     <pre><code>
                                                 table {
@@ -973,10 +873,9 @@
                                                     background-color: #ecf0f1;
                                                 }
                                                 </code></pre>
-
+            
                     <h3>6. Багаторівневі списки</h3>
-                    <p>
-                        Для багаторівневих списків можна застосовувати відступи та зміщення за допомогою властивості
+                    <p>Для багаторівневих списків можна застосовувати відступи та зміщення за допомогою властивості
                         <code>padding</code>
                         та <code>margin</code>.
                     </p>
@@ -993,15 +892,13 @@
                                                     margin-left: 20px;
                                                 }
                                                 </code></pre>
-
+            
                 </div>
                 <div id="cssAdvanced" class="lab1_2-section content-section text-content">
                     <h3>7. CSS Просунутий</h3>
-                    <p>
-                        Просунуте використання CSS включає застосування анімацій, псевдокласів та псевдоелементів. Ось
+                    <p>Просунуте використання CSS включає застосування анімацій, псевдокласів та псевдоелементів. Ось
                         приклад анімації
-                        для кнопки:
-                    </p>
+                        для кнопки:</p>
                     <pre><code>
                                     .button {
                                         background-color: #3498db;
@@ -1020,7 +917,7 @@
                                         transform: scale(0.95);
                                     }
                                 </code></pre>
-
+            
                     <h3>Приклад таблиці</h3>
                     <table>
                         <thead>
@@ -1048,18 +945,16 @@
                             </tr>
                         </tbody>
                     </table>
-
+            
                     <h3>Приклад багаторівневого списку</h3>
                     <ul>
-                        <li>
-                            Основний пункт 1
+                        <li>Основний пункт 1
                             <ul>
                                 <li>Підпункт 1.1</li>
                                 <li>Підпункт 1.2</li>
                             </ul>
                         </li>
-                        <li>
-                            Основний пункт 2
+                        <li>Основний пункт 2
                             <ul>
                                 <li>Підпункт 2.1</li>
                                 <li>Підпункт 2.2</li>
@@ -1094,31 +989,26 @@
                         веб-сторінки.
                     </p>
                     <h2>Контрольні питання</h2>
-
+            
                     <h3>1. Для чого використовуються каскадні таблиці стилів?</h3>
-                    <p>
-                        Каскадні таблиці стилів (CSS) використовуються для опису зовнішнього вигляду елементів
+                    <p>Каскадні таблиці стилів (CSS) використовуються для опису зовнішнього вигляду елементів
                         веб-сторінки, таких як шрифти,
                         кольори, відступи, розміри тощо. Вони дозволяють розділити структуру документа (HTML) і його
                         стилі (CSS),
-                        забезпечуючи гнучкість і зручність у дизайні.
-                    </p>
-
+                        забезпечуючи гнучкість і зручність у дизайні.</p>
+            
                     <h3>2. Які методи визначення стилів у HTML-документі ви знаєте?</h3>
                     <ul>
-                        <li>
-                            Вбудований стиль (inline styles): за допомогою атрибуту <code>style</code> у тегах HTML.
+                        <li>Вбудований стиль (inline styles): за допомогою атрибуту <code>style</code> у тегах HTML.
                         </li>
-                        <li>
-                            Внутрішній стиль (internal styles): у межах тегів <code>&lt;style&gt;</code> у розділі
+                        <li>Внутрішній стиль (internal styles): у межах тегів <code>&lt;style&gt;</code> у розділі
                             <code>&lt;head&gt;</code>.
                         </li>
-                        <li>
-                            Зовнішній стиль (external styles): у зовнішньому CSS-файлі, підключеному через тег
+                        <li>Зовнішній стиль (external styles): у зовнішньому CSS-файлі, підключеному через тег
                             <code>&lt;link&gt;</code>.
                         </li>
                     </ul>
-
+            
                     <h3>3. У чому різниця між принципами каскадування і спадкування?</h3>
                     <p>
                         <strong>Каскадування:</strong> Це процес вирішення конфліктів між стилями, що застосовуються до
@@ -1129,33 +1019,32 @@
                         або шрифт) автоматично
                         передаватися дочірнім елементам.
                     </p>
-
+            
                     <h3>4. Як в HTML-документі оформлюються селектори тегу і класу?</h3>
                     <p>
                         <strong>Селектор тегу:</strong> Оформлюється через назву тега, наприклад:
-                        <pre><code>
+                    <pre><code>
                                         p {
                                             color: blue;
                                         }
                                         </code></pre>
-                        <strong>Селектор класу:</strong> Починається з крапки і застосовується до елементів з відповідним
-                        атрибутом
-                        <code>class</code>:
-                        <pre><code>
+                    <strong>Селектор класу:</strong> Починається з крапки і застосовується до елементів з відповідним
+                    атрибутом
+                    <code>class</code>:
+                    <pre><code>
                                         .highlight {
                                             background-color: yellow;
                                         }
                                         </code></pre>
                     </p>
-
+            
                     <h3>5. Для чого використовується ідентифікатор?</h3>
-                    <p>
-                        Ідентифікатор використовується для стилізації або маніпуляцій із певним унікальним елементом
+                    <p>Ідентифікатор використовується для стилізації або маніпуляцій із певним унікальним елементом
                         HTML-сторінки. Він
                         задається через атрибут <code>id</code> і викликається в CSS за допомогою символу
                         <code>#</code>.
                     </p>
-
+            
                     <h3>6. Навести приклади оформлення текстових елементів</h3>
                     <p>Приклади стилізації тексту:</p>
                     <pre><code>
@@ -1179,18 +1068,14 @@
                                     </code></pre>
                 </div>
             </div>
-
+            
             <!-- Лабораторна робота 2 -->
             <div id="lab2" class="content-section">
                 <div class="sidebar">
-                    <button onclick="showSection('goal-2', 'lab2')">
-                        Тема, мета, місце розташування сайту та
-                        звіту
-                    </button>
-                    <button onclick="showSection('task1', 'lab2')">
-                        Завдання №1.Зовнішній вигляд макету. Код
-                        макету</br>
-                    </button>
+                    <button onclick="showSection('goal-2', 'lab2')">Тема, мета, місце розташування сайту та
+                        звіту</button>
+                    <button onclick="showSection('task1', 'lab2')">Завдання №1.Зовнішній вигляд макету. Код
+                        макету</br></button>
                     <button onclick="showSection('task2', 'lab2')">Завдання №2</button>
                     <button onclick="showSection('fixedTableLayout', 'lab2')">Фіксована таблична верстка</button>
                     <button onclick="showSection('fluidTableLayout', 'lab2')">Гумова таблична верстка</button>
@@ -1204,44 +1089,30 @@
                     <button onclick="showSection('conclusions-2', 'lab2')">Висновки</button>
                 </div>
                 <div id="goal-2" class="lab2-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+                    <p><strong>Тема:</strong>ВЕРСТКА HTML-ДОКУМЕНТУ. БЛОКОВА ВЕРСТКА. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
                     </p><br />
-                    <p>
-                        <strong>Мета:</strong></br>⎯ придбати практичні навички роботи верстки сторінок засобами CSS,
+                    <p><strong>Мета:</strong></br>⎯ придбати практичні навички роботи верстки сторінок засобами CSS,
                         верстки на основі
                         плаваючих елементів, з’ясувати
                         переваги та недоліки типів макетів веб-сторінок</br>
                         ⎯ придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
                     </p>
-                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                        Посилання на
-                        репозиторій на живу сторінку власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій власного WEB-застосунку
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій звітного HTML-документа
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій на живу сторінку звітного HTML-документ
-                    </a><br />
-                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                        Посилання на
-                        репозиторій з самостійними роботами
-                    </a><br />
-                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                        Посилання на
-                        репозиторій живу сторінку з самостійними роботами
-                    </a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій звітного HTML-документа</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій на живу сторінку звітного HTML-документ</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій з самостійними роботами</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
                 <div id="task1" class="lab2-section content-section text-content">
                     <h2>Опис особливостей макету</h2>
-
+            
                     <h3>1. Блокова гумова верстка</h3>
                     <p>
                         Макет побудований за принципом блокової верстки, де основні елементи, такі як
@@ -1263,7 +1134,7 @@
                                                                                     max-width: 1200px; /* Максимальна ширина для великих екранів */
                                                                                 }
                                                                             </code></pre>
-
+            
                     <h3>2. Використання Flexbox</h3>
                     <p>
                         У макеті активно використовується Flexbox для вирівнювання елементів. Наприклад, у шапці сайту
@@ -1297,7 +1168,7 @@
                                                                                     padding: 15px;
                                                                                 }
                                                                             </code></pre>
-
+            
                     <h3>3. Адаптивна верстка</h3>
                     <p>
                         Хоча макет побудований за принципом гумової верстки, його можна легко адаптувати для різних
@@ -1315,7 +1186,7 @@
                                                                                     }
                                                                                 }
                                                                             </code></pre>
-
+            
                     <h3>Висновок</h3>
                     <p>
                         Макет є блоковим, оскільки використовує розділення на основні секції, гумовим — завдяки
@@ -1325,15 +1196,14 @@
                         у
                         вирівнюванні та створенні гнучкої структури макету.
                     </p>
-
+            
                     <p>Скріншот головної сторінки</p>
                     <img src="main-page-screen1.png" alt="Скріншот головної сторінки сайту" class="screen-img">
                     <img src="roboto-font-example1.png" alt="Скріншот головної сторінки сайту" class="screen-img">
                     <img src="main-page-screen3.png" alt="Скріншот головної сторінки сайту" class="screen-img">
                     <img src="main-page-screen4.png" alt="Скріншот головної сторінки сайту" class="screen-img">
-                    <p>
-                        Код html документу
-                        <pre><code>&lt;!DOCTYPE html&gt;
+                    <p>Код html документу
+                    <pre><code>&lt;!DOCTYPE html&gt;
                                                     &lt;html lang="uk"&gt;
                                                     
                                                     &lt;head&gt;
@@ -1538,9 +1408,8 @@
                                                     &lt;/html&gt;
                                                 </code></pre>
                     </p>
-                    <p>
-                        Код CSS
-                        <pre><code>
+                    <p>Код CSS
+                    <pre><code>
                                                         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;700&display=swap');
                                                         
                                                         body {
@@ -2048,11 +1917,10 @@
                                                         }
                                             </code></pre>
                     </p>
-
+            
                 </div>
                 <div id="task2" class="lab2-section content-section text-content">
-                    <p>
-                        Завдання 2.Варіант 2.Засобами HTML та CSS виконати Завдання №2, в саме: створити окремі веб-сторінки, а саме:
+                    <p>Завдання 2.Варіант 2.Засобами HTML та CSS виконати Завдання №2, в саме: створити окремі веб-сторінки, а саме:
                         • Розмітку за допомогою таблиці (номер варіанта – остання цифра у списку групи)
                         o Фіксована таблична верстка
                         o Гумова таблична верстка
@@ -2240,7 +2108,7 @@
                             &lt;/body&gt;
                             &lt;/html&gt;
                                     </pre>
-
+            
                 </div>
                 <div id="mytask2" class="lab2-section content-section text-content">
                     <h3>Завдання 2. Варіант 2</h3>
@@ -2358,10 +2226,10 @@
                                     &lt;/html&gt;
             
                                 </code></pre>
-
-
+            
+            
                     <h1>Висновки</h1>
-
+            
                     <!-- Таблиця порівняння -->
                     <h2>Порівняння таблиць та блоків</h2>
                     <table>
@@ -2395,7 +2263,7 @@
                             </tr>
                         </tbody>
                     </table>
-
+            
                     <!-- Плаваючі блоки -->
                     <div class="conclusion-section">
                         <div class="block-container">
@@ -2729,30 +2597,22 @@
                         створити зручний, естетично привабливий і функціональний інтерфейс.
                     </p>
                     <ul>
-                        <li>
-                            Використання <strong>Flexbox</strong> для адаптивного розташування елементів, що забезпечує правильне
-                            відображення на різних пристроях.
-                        </li>
-                        <li>
-                            Впровадження ефективного дизайну з <strong>напівпрозорими елементами</strong>, які додають візуальної
+                        <li>Використання <strong>Flexbox</strong> для адаптивного розташування елементів, що забезпечує правильне
+                            відображення на різних пристроях.</li>
+                        <li>Впровадження ефективного дизайну з <strong>напівпрозорими елементами</strong>, які додають візуальної
                             глибини.
                         </li>
-                        <li>
-                            Організація коду з дотриманням принципів <strong>DRY (Don't Repeat Yourself)</strong> для зручності
+                        <li>Організація коду з дотриманням принципів <strong>DRY (Don't Repeat Yourself)</strong> для зручності
                             підтримки й
-                            масштабування.
-                        </li>
-                        <li>
-                            Розділення стилів на загальні та специфічні для кожної секції для підвищення читабельності та повторного
-                            використання.
-                        </li>
+                            масштабування.</li>
+                        <li>Розділення стилів на загальні та специфічні для кожної секції для підвищення читабельності та повторного
+                            використання.</li>
                         <li>Реалізація випадаючих меню для покращення навігації.</li>
                     </ul>
-                    <p>
-                        Сайт відповідає основним принципам веб-розробки, що включають <em>адаптивність</em>, <em>доступність</em>,
+                    <p>Сайт відповідає основним принципам веб-розробки, що включають <em>адаптивність</em>, <em>доступність</em>,
                         <em>зручність для користувачів</em>, і може бути основою для подальших покращень.
                     </p>
-
+            
                     <h2>Контрольні питання</h2>
                     <ol>
                         <li>
@@ -2760,56 +2620,42 @@
                             <p>Методики верстки засновані на таких концепціях:</p>
                             <ul>
                                 <li><strong>Потік документа:</strong> природне розташування елементів на сторінці.</li>
-                                <li>
-                                    <strong>Блокова та стрічкова модель:</strong> визначає, як елементи займають простір на
-                                    сторінці.
-                                </li>
-                                <li>
-                                    <strong>Відносне та абсолютне позиціонування:</strong> задає розташування відносно інших
+                                <li><strong>Блокова та стрічкова модель:</strong> визначає, як елементи займають простір на
+                                    сторінці.</li>
+                                <li><strong>Відносне та абсолютне позиціонування:</strong> задає розташування відносно інших
                                     елементів або
-                                    координат.
-                                </li>
+                                    координат.</li>
                             </ul>
                         </li>
                         <li>
                             <strong>Дати визначення фіксованому типу макетів веб-сторінок. Переваги та недоліки.</strong>
-                            <p>
-                                <strong>Фіксований макет:</strong> ширина елементів задається в пікселях і не змінюється при зміні
+                            <p><strong>Фіксований макет:</strong> ширина елементів задається в пікселях і не змінюється при зміні
                                 розміру
-                                вікна.
-                            </p>
+                                вікна.</p>
                             <p><strong>Переваги:</strong> точний контроль над виглядом, простота у розробці.</p>
-                            <p>
-                                <strong>Недоліки:</strong> погана адаптивність для різних екранів, незручність для мобільних
-                                пристроїв.
-                            </p>
+                            <p><strong>Недоліки:</strong> погана адаптивність для різних екранів, незручність для мобільних
+                                пристроїв.</p>
                         </li>
                         <li>
                             <strong>Дати визначення гумовому типу макетів веб-сторінок. Переваги та недоліки.</strong>
-                            <p>
-                                <strong>Гумовий макет:</strong> ширина задається у відсотках, змінюється залежно від ширини вікна.
+                            <p><strong>Гумовий макет:</strong> ширина задається у відсотках, змінюється залежно від ширини вікна.
                             </p>
                             <p><strong>Переваги:</strong> краща адаптація до різних екранів.</p>
-                            <p>
-                                <strong>Недоліки:</strong> можливі проблеми з читабельністю при надто великих або маленьких екранах.
+                            <p><strong>Недоліки:</strong> можливі проблеми з читабельністю при надто великих або маленьких екранах.
                             </p>
                         </li>
                         <li>
                             <strong>Дати визначення еластичному типу макетів веб-сторінок. Переваги та недоліки.</strong>
-                            <p>
-                                <strong>Еластичний макет:</strong> ширина елементів визначається у відносних одиницях (наприклад,
-                                em).
-                            </p>
+                            <p><strong>Еластичний макет:</strong> ширина елементів визначається у відносних одиницях (наприклад,
+                                em).</p>
                             <p><strong>Переваги:</strong> гнучкість при зміні розмірів шрифтів.</p>
                             <p><strong>Недоліки:</strong> складність у налаштуванні пропорцій між елементами.</p>
                         </li>
                         <li>
                             <strong>Дати визначення адаптивному типу макетів веб-сторінок. Переваги та недоліки.</strong>
-                            <p>
-                                <strong>Адаптивний макет:</strong> використовує медіазапити CSS для налаштування стилів під різні
+                            <p><strong>Адаптивний макет:</strong> використовує медіазапити CSS для налаштування стилів під різні
                                 розміри
-                                екранів.
-                            </p>
+                                екранів.</p>
                             <p><strong>Переваги:</strong> зручність для будь-якого пристрою, контроль над відображенням.</p>
                             <p><strong>Недоліки:</strong> складна розробка.</p>
                         </li>
@@ -2821,16 +2667,13 @@
                         </li>
                         <li>
                             <strong>Як засобами HTML та CSS створити веб-сторінку за допомогою таблиці?</strong>
-                            <p>
-                                Використовується тег <code>&lt;table&gt;</code> для структурування макету. Таблиці стилізуються за
+                            <p>Використовується тег <code>&lt;table&gt;</code> для структурування макету. Таблиці стилізуються за
                                 допомогою
-                                CSS. Проте цей підхід застарілий для верстки.
-                            </p>
+                                CSS. Проте цей підхід застарілий для верстки.</p>
                         </li>
                         <li>
                             <strong>Як засобами HTML та CSS створити веб-сторінку за допомогою плаваючих блоків?</strong>
-                            <p>
-                                Використовується CSS-властивість <code>float</code> для розташування блоків. Очищення плаваючих
+                            <p>Використовується CSS-властивість <code>float</code> для розташування блоків. Очищення плаваючих
                                 елементів
                                 здійснюється через <code>clear: both</code>. Цей метод поступається новішим технікам, як-от Flexbox
                                 і Grid.
@@ -2839,7 +2682,7 @@
                     </ol>
                 </div>
             </div>
-
+            
             <!-- Лабораторна робота 2_2 -->
             <div id="lab2_2" class="content-section">
                 <div class="sidebar">
@@ -2851,48 +2694,32 @@
                     <button onclick="showSection('logic-operators', 'lab2_2')">Логічні оператори</button>
                     <button onclick="showSection('conclusions-2_2', 'lab2_2')">Висновки</button>
                 </div>
-
+            
                 <div id="goal2_2" class="lab2_2-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.
+                    <p><strong>Тема:</strong>АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.
                     </p><br />
-                    <p>
-                        <strong>Мета:</strong>Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile
-                        First.<br />
+                    <p><strong>Мета:</strong>Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile
+                    First.<br />
 
-                        <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                            Посилання на
-                            репозиторій на живу сторінку власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій звітного HTML-документа
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій на живу сторінку звітного HTML-документ
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій з самостійними роботами
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій живу сторінку з самостійними роботами
-                        </a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                        репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій власного WEB-застосунку</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій звітного HTML-документа</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій на живу сторінку звітного HTML-документ</a><br />
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                        репозиторій з самостійними роботами</a><br />
+                    <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                        репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
-
+            
                 <div id="desktop" class="lab2_2-section content-section text-content">
                     <h4>Десктопна версія</h4>
                     <p>Десктопна версія оптимізована для екранів шириною понад <strong>1024px</strong>.</p>
-                    <p>
-                        Для десктопів використовується широка структура макета із центральним контентом, шрифтами стандартного
-                        розміру та великою кількістю простору між елементами.
-                    </p>
+                    <p>Для десктопів використовується широка структура макета із центральним контентом, шрифтами стандартного
+                        розміру та великою кількістю простору між елементами.</p>
                     <pre><code>
                     /* Адаптація для екранів шириною від 1024px */
                     /* Додано центральне вирівнювання контенту */
@@ -2908,15 +2735,13 @@
                     }
                     </code></pre>
                 </div>
-
+            
                 <div id="tablet" class="lab2_2-section content-section text-content">
                     <h4>Планшетна версія</h4>
                     <p>Планшетна версія оптимізована для ширини екранів <strong>від 768px до 1024px</strong>.</p>
-                    <p>
-                        Основні зміни: зменшення розміру шрифтів, оптимізація відступів, перегрупування елементів для забезпечення
-                        кращої читабельності.
-                    </p>
-                    <pre><code>
+                    <p>Основні зміни: зменшення розміру шрифтів, оптимізація відступів, перегрупування елементів для забезпечення
+                        кращої читабельності.</p>
+                <pre><code>
                 /* Адаптація для планшетів */
                 /* Оптимізація відступів і структури макету */
                 @media (max-width: 1024px) and (min-width: 768px) {
@@ -2932,14 +2757,12 @@
                 }
                         </code></pre>
                 </div>
-
+            
                 <div id="mobile" class="lab2_2-section content-section text-content">
                     <h4>Мобільна версія</h4>
                     <p>Мобільна версія розроблена для ширини екранів <strong>менше 768px</strong>.</p>
-                    <p>
-                        Основні зміни: вертикальне розташування елементів, максимальна адаптація навігації, приховування неважливих
-                        блоків.
-                    </p>
+                    <p>Основні зміни: вертикальне розташування елементів, максимальна адаптація навігації, приховування неважливих
+                        блоків.</p>
                     <pre><code>
                     /* Адаптація для мобільних пристроїв */
                     /* Вертикальне розташування елементів, мінімалістичний дизайн */
@@ -2957,26 +2780,22 @@
                     }
                             </code></pre>
                 </div>
-
+            
                 <div id="approach" class="lab2_2-section content-section text-content">
                     <h4>Пояснення підходу</h4>
-                    <p>
-                        Для адаптивної верстки використані брейкпоінти <strong>768px</strong> та <strong>1024px</strong>. Для кожного
-                        розміру екрану створено окремі стилі, що забезпечують оптимальний UX. Головні аспекти:
-                    </p>
+                    <p>Для адаптивної верстки використані брейкпоінти <strong>768px</strong> та <strong>1024px</strong>. Для кожного
+                        розміру екрану створено окремі стилі, що забезпечують оптимальний UX. Головні аспекти:</p>
                     <ul>
                         <li>Великий розмір шрифтів та просторі блоки для десктопів.</li>
                         <li>Оптимізація відступів для планшетів.</li>
                         <li>Спрощення структури для мобільних пристроїв.</li>
                     </ul>
                 </div>
-
+            
                 <div id="logic-operators" class="lab2_2-section content-section text-content">
                     <h4>Логічні оператори</h4>
-                    <p>
-                        У процесі створення верстки використовувались логічні оператори <code>and</code>, <code>not</code> у
-                        медіа-запитах для точного налаштування умов:
-                    </p>
+                    <p>У процесі створення верстки використовувались логічні оператори <code>and</code>, <code>not</code> у
+                        медіа-запитах для точного налаштування умов:</p>
                     <pre><code>
             /* Використання логічних операторів */
             @media not all and (max-width: 600px) {
@@ -2986,71 +2805,59 @@
             }
                     </code></pre>
                 </div>
-
+            
                 <div id="conclusions-2_2" class="lab2_2-section content-section text-content">
                     <h2>Висновки до лабораторної роботи №4</h2>
                     <ol>
                         <li>
                             <strong>Розробка адаптивної верстки:</strong>
-                            <p>
-                                У ході лабораторної роботи було створено адаптивну верстку для трьох основних типів пристроїв:
+                            <p>У ході лабораторної роботи було створено адаптивну верстку для трьох основних типів пристроїв:
                                 десктопів,
                                 планшетів і мобільних телефонів. Використання медіа-запитів дозволило реалізувати відповідні стилі
                                 для
-                                кожного розміру екрану, забезпечуючи зручність використання сайту незалежно від пристрою.
-                            </p>
+                                кожного розміру екрану, забезпечуючи зручність використання сайту незалежно від пристрою.</p>
                         </li>
                         <li>
                             <strong>Десктопна версія:</strong>
-                            <p>
-                                Верстка для десктопних пристроїв була розроблена з урахуванням екранів шириною понад 1024px. Основна
+                            <p>Верстка для десктопних пристроїв була розроблена з урахуванням екранів шириною понад 1024px. Основна
                                 увага
                                 приділялась зручному розташуванню елементів, оптимальній ширині контейнерів і коректному розмірові
                                 шрифтів
-                                для читабельності.
-                            </p>
+                                для читабельності.</p>
                         </li>
                         <li>
                             <strong>Планшетна версія:</strong>
-                            <p>
-                                Для екранів шириною від 768px до 1024px були застосовані стилі, що оптимізують розташування елементів
+                            <p>Для екранів шириною від 768px до 1024px були застосовані стилі, що оптимізують розташування елементів
                                 у більш
                                 компактному вигляді. Забезпечено зручність навігації завдяки адаптації меню та розташуванню
-                                контенту.
-                            </p>
+                                контенту.</p>
                         </li>
                         <li>
                             <strong>Мобільна версія:</strong>
-                            <p>
-                                Для пристроїв з екранами менш ніж 768px застосовано мінімалістичний дизайн із видаленням зайвих
+                            <p>Для пристроїв з екранами менш ніж 768px застосовано мінімалістичний дизайн із видаленням зайвих
                                 елементів. Це
-                                забезпечило швидке завантаження сторінки та зручне використання на невеликих екранах.
-                            </p>
+                                забезпечило швидке завантаження сторінки та зручне використання на невеликих екранах.</p>
                         </li>
                         <li>
                             <strong>Використання логічних операторів:</strong>
-                            <p>
-                                У процесі розробки адаптивної верстки було застосовано логічні оператори <code>and</code>,
+                            <p>У процесі розробки адаптивної верстки було застосовано логічні оператори <code>and</code>,
                                 <code>not</code>
                                 для точного визначення умов медіа-запитів. Це дозволило покращити ефективність адаптації стилів для
                                 різних
-                                пристроїв.
-                            </p>
+                                пристроїв.</p>
                         </li>
                         <li>
                             <strong>Висновок:</strong>
-                            <p>
-                                Отримані знання та практичні навички з адаптивної верстки дозволять розробляти сучасні веб-сторінки,
+                            <p>Отримані знання та практичні навички з адаптивної верстки дозволять розробляти сучасні веб-сторінки,
                                 що
                                 відповідають потребам різних користувачів. Використання медіа-запитів і логічних операторів
                                 забезпечує
-                                високий рівень гнучкості дизайну.
-                            </p>
+                                високий рівень гнучкості дизайну.</p>
                         </li>
                     </ol>
                 </div>
             </div>
-
+                  
             <!-- Лабораторна робота 3 -->
             <div id="lab3" class="content-section">
                 <div class="sidebar">
@@ -3063,41 +2870,27 @@
                     <button onclick="showSection('conclusions-3', 'lab3')">Висновки</button>
                 </div>
                 <div id="goal3" class="lab3-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
-                        ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
+                    <p><strong>Тема:</strong>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
+                    ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT
 
                     </p><br />
-                    <p>
-                        <strong>Мета:</strong>придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях. Реалізація програм
-                        засовами мови JAVASCRIPT<br />
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з конструкціями мови JS, масивами та фугкціями у js-сценаріях. Реалізація програм
+                    засовами мови JAVASCRIPT<br />
 
-                        <a href="https://bilberryyy.github.io/Practice_lab3/"><strong>Веб-сторінка практичного завдання</strong></a><br />
-
-                        <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                            Посилання на
-                            репозиторій на живу сторінку власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій звітного HTML-документа
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій на живу сторінку звітного HTML-документ
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій з самостійними роботами
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій живу сторінку з самостійними роботами
-                        </a><br />
+                    <a href="https://bilberryyy.github.io/Practice_lab3/"><strong>Веб-сторінка практичного завдання</strong></a><br />
+                
+                        <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                            репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій власного WEB-застосунку</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій звітного HTML-документа</a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                            репозиторій на живу сторінку звітного HTML-документ</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій з самостійними роботами</a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                            репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
                 <div id="task-1" class="lab3-section content-section text-content">
                     <p>Завдання №1. Варіант 1</p>
@@ -3121,7 +2914,7 @@
                         console.log(result);
                     </code></pre>
                     <img src="console-task-1.png" alt="Скріншот консолі" class="screen-img">
-
+                    
                 </div>
                 <div id="task-2" class="lab3-section content-section text-content">
                     <p>Завдання №2.Варіант 1</p>
@@ -3321,19 +3114,13 @@
                 </div>
                 <div id="conclusions-3" class="lab3-section content-section text-content">
                     <h2>Висновки</h2>
-                    <p>
-                        У ході виконання лабораторної роботи було реалізовано кілька завдань для закріплення навичок програмування на
-                        JavaScript та роботи з HTML-формами.
-                    </p>
+                    <p>У ході виконання лабораторної роботи було реалізовано кілька завдань для закріплення навичок програмування на
+                        JavaScript та роботи з HTML-формами.</p>
                     <ul>
-                        <li>
-                            Реалізовано валідацію введених даних у формі: перевірка цілих і дійсних чисел, форматів дат і однаковості
-                            паролів.
-                        </li>
-                        <li>
-                            Створено HTML-форму для реєстрації користувача з перевіркою полів за допомогою атрибутів `required`, `pattern` і
-                            JavaScript.
-                        </li>
+                        <li>Реалізовано валідацію введених даних у формі: перевірка цілих і дійсних чисел, форматів дат і однаковості
+                            паролів.</li>
+                        <li>Створено HTML-форму для реєстрації користувача з перевіркою полів за допомогою атрибутів `required`, `pattern` і
+                            JavaScript.</li>
                         <li>Задано задачу на маніпуляцію масивами, пошук максимального та мінімального елементів і їх обмін.</li>
                         <li>Застосовано метод сортування масиву за зростанням за допомогою методу вставки.</li>
                         <li>Вивчено важливість валідації даних як на стороні клієнта, так і на сервері для підвищення безпеки.</li>
@@ -3342,7 +3129,7 @@
 
                 </div>
             </div>
-
+            
             <!-- Лабораторна робота 3_2 -->
             <div id="lab3_2" class="content-section">
                 <div class="sidebar">
@@ -3351,41 +3138,27 @@
                     <button onclick="showSection('conclusions-3_2', 'lab3_2')">Висновки</button>
                 </div>
                 <div id="goal3_2" class="lab3_2-section content-section text-content">
-                    <p>
-                        <strong>Тема:</strong>ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК
-                        КОЛБЕКИ.
+                    <p><strong>Тема:</strong>ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК
+                    КОЛБЕКИ.
                     </p><br />
-                    <p>
-                        <strong>Мета:</strong>придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як
-                        колбеки.Реалізація програм засовами мови JAVASCRIPT
-                        <br />
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з об'єктами. Методи об'єкта.. Callback. Стрілочні функції. Стрілочні функції як
+                    колбеки.Реалізація програм засовами мови JAVASCRIPT
+                    <br />
 
-                        <a href="https://bilberryyy.github.io/Practice_lab3_2/"><strong>Веб-сторінка практичного завдання</strong></a><br />
+                    <a href="https://bilberryyy.github.io/Practice_lab3_2/"><strong>Веб-сторінка практичного завдання</strong></a><br />
 
-                        <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">
-                            Посилання на
-                            репозиторій на живу сторінку власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій власного WEB-застосунку
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій звітного HTML-документа
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій на живу сторінку звітного HTML-документ
-                        </a><br />
-                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
-                            Посилання на
-                            репозиторій з самостійними роботами
-                        </a><br />
-                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
-                            Посилання на
-                            репозиторій живу сторінку з самостійними роботами
-                        </a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на
+                            репозиторій на живу сторінку власного WEB-застосунку</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій власного WEB-застосунку</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій звітного HTML-документа</a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">Посилання на
+                            репозиторій на живу сторінку звітного HTML-документ</a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на
+                            репозиторій з самостійними роботами</a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">Посилання на
+                            репозиторій живу сторінку з самостійними роботами</a><br />
                 </div>
                 <div id="tasks-3_2" class="lab3_2-section content-section text-content">
                     <h2>Завдання 1</h2>
@@ -3409,7 +3182,7 @@
                     createProduct({ name: "Laptop", price: 1500, quantity: 2 }, logProduct);
                     createProduct({ name: "Laptop", price: 1500, quantity: 2 }, logTotalPrice);
                     </pre>
-
+                    
                     <h2>Завдання 3</h2>
                     <pre>
                     // Об'єкт із медикаментами та їх датами придатності
@@ -3429,7 +3202,7 @@
                     
                     console.log(validMedicines); // Виводимо результат
                     </pre>
-
+                    
                     <h2>Завдання 5</h2>
                     <pre>
                     // Масив фруктів із назвами та цінами
@@ -3448,7 +3221,7 @@
                     
                     console.log(discountedFruits); // Виводимо оновлений масив
                     </pre>
-
+                    
                     <h2>Завдання 7</h2>
                     <pre>
                     // Клас Client для створення об'єкта клієнта з приватними властивостями
@@ -3488,7 +3261,7 @@
                     client.login = "newUser"; // Оновлюємо login
                     console.log(client.login); // Виводить newUser
                     </pre>
-
+                    
                     <h2>Завдання 9</h2>
                     <pre>
                     // Масив твіти з тегами
@@ -3510,7 +3283,7 @@
                     
                     console.log(tagCounts); // Очікуваний результат: {js: 3, nodejs: 3, html: 2, css: 2, react: 2}
                     </pre>
-
+                    
                     <h2>Завдання 10</h2>
                     <pre>
                     // Перевірка правильності закриття дужок у рядку
@@ -3541,78 +3314,222 @@
                 </div>
                 <div id="conclusions-3_2" class="lab3_2-section content-section text-content">
                     <h2>Висновки до лабораторної роботи</h2>
-                    <p>
-                        1. <strong>Робота з функціями та колбеками:</strong> В процесі виконання завдання було відпрацьовано використання
+                    <p>1. <strong>Робота з функціями та колбеками:</strong> В процесі виконання завдання було відпрацьовано використання
                         функцій з колбеками. Це дозволяє створювати більш гнучкі та динамічні програми, де функції можуть передавати
-                        результат своєї роботи іншій функції для подальшої обробки.
-                    </p>
-
-                    <p>
-                        2. <strong>Обробка об'єктів і масивів:</strong> Завдання допомогло закріпити навички роботи з об'єктами та масивами,
+                        результат своєї роботи іншій функції для подальшої обробки.</p>
+                    
+                    <p>2. <strong>Обробка об'єктів і масивів:</strong> Завдання допомогло закріпити навички роботи з об'єктами та масивами,
                         зокрема, маніпуляція даними за допомогою таких методів як <code>map</code>, <code>filter</code>, <code>reduce</code>
-                        та <code>sort</code>. Вони є важливими інструментами для обробки та трансформації даних у JavaScript.
-                    </p>
-
-                    <p>
-                        3. <strong>Приватні властивості в класах:</strong> Вивчення приватних властивостей у класах через використання
+                        та <code>sort</code>. Вони є важливими інструментами для обробки та трансформації даних у JavaScript.</p>
+                    
+                    <p>3. <strong>Приватні властивості в класах:</strong> Вивчення приватних властивостей у класах через використання
                         символу <code>#</code> дозволило зрозуміти концепцію інкапсуляції в об'єктно-орієнтованому програмуванні. Приватні
-                        властивості забезпечують контроль доступу до даних, що підвищує безпеку і модульність коду.
-                    </p>
-
-                    <p>
-                        4. <strong>Робота з датами:</strong> Завдання на роботу з медичними препаратами і їх датами придатності показало
-                        важливість роботи з об'єктами типу <code>Date</code> для обробки дат та порівняння їх.
-                    </p>
-
-                    <p>
-                        5. <strong>Перевірка правильності структури рядка:</strong> Виконання задачі на перевірку правильності закриття дужок
-                        допомогло краще зрозуміти роботу з даними у вигляді рядків та алгоритми для їх обробки в JavaScript.
-                    </p>
+                        властивості забезпечують контроль доступу до даних, що підвищує безпеку і модульність коду.</p>
+                    
+                    <p>4. <strong>Робота з датами:</strong> Завдання на роботу з медичними препаратами і їх датами придатності показало
+                        важливість роботи з об'єктами типу <code>Date</code> для обробки дат та порівняння їх.</p>
+                    
+                    <p>5. <strong>Перевірка правильності структури рядка:</strong> Виконання задачі на перевірку правильності закриття дужок
+                        допомогло краще зрозуміти роботу з даними у вигляді рядків та алгоритми для їх обробки в JavaScript.</p>
 
                 </div>
             </div>
 
-        </div>
-    </main>
+              <!-- ЛР №4 -->
+  <div id="lab4" class="content-section">
+    <div class="sidebar">
+      <button onclick="showSection('goal4', 'lab4')">Тема ЛР№4</button>
+      <button onclick="showSection('tasks-4', 'lab4')">Завдання</button>
+      <button onclick="showSection('screenshots-4', 'lab4')">Скріншоти</button>
+      <button onclick="showSection('conclusions-4', 'lab4')">Висновки</button>
+    </div>
 
-    <script>
-        // Функція для відображення вибраної лабораторної роботи
-        function showLab(labId) {
-            const labs = document.querySelectorAll('.content-section');
-            labs.forEach(lab => lab.classList.remove('active'));
-            document.getElementById(labId).classList.add('active');
-        }
+    <div id="goal4" class="lab4-section content-section text-content">
+        <div class="container">
+      <p><strong>Тема:</strong> КЛАСИ. ОБ'ЄКТНА МОДЕЛЬ ДОКУМЕНТА (DOM). ПОДІЇ. ОБ'ЄКТ ПОДІЇ. ДЕЛЕГУВАННЯ ПОДІЙ. THROTTLE. МОДУЛЬНОСТЬ КОДУ.</p>
+      <p><strong>Мета:</strong> Придбати практичні навички роботи з об'єктами, колбеками, стрілочними функціями, делегуванням подій та реалізацією програм засобами JavaScript.</p>
+    </div>
 
-        // Функція для відображення вибраного розділу у вибраній лабораторній роботі
-        function showSection(sectionId, labId) {
-            const activeLab = document.getElementById(labId);
-            if (activeLab) {
-                const sections = activeLab.querySelectorAll(`.${labId}-section`);
-                sections.forEach(section => section.style.display = 'none');
-                activeLab.querySelector(`#${sectionId}`).style.display = 'block';
-            }
-        }
+    <br />
+<div>
+                        <a href="https://.../Practice_lab3_2/"><strong>Веб-сторінка практичного завдання</strong></a><br />
 
-        // Ініціалізація: показ першої лабораторної роботи і першого розділу
-        document.addEventListener("DOMContentLoaded", () => {
-            showLab('lab1');
-            showSection('description', 'lab1');
-        });
+                        <a href="https://alexandra-adamchyk.github.io/appWebAdamchyk/#">
+                            Посилання на
+                            репозиторій на живу сторінку власного WEB-застосунку
+                        </a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
+                            Посилання на
+                            репозиторій власного WEB-застосунку
+                        </a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appRECORD-DerkachDaria-MEU-2025">
+                            Посилання на
+                            репозиторій звітного HTML-документа
+                        </a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appRECORD-DerkachDaria-MEU-2025/">
+                            Посилання на
+                            репозиторій на живу сторінку звітного HTML-документ
+                        </a><br />
+                        <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">
+                            Посилання на
+                            репозиторій з самостійними роботами
+                        </a><br />
+                        <a href="https://bilberryyy.github.io/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025/">
+                            Посилання на
+                            репозиторій живу сторінку з самостійними роботами
+                        </a><br />
+</div></div>
+    <div id="tasks-4" class="lab4-section content-section text-content">
+      <ul>
+        <li><a href="/task_lab4/task2.html" target="_blank">Завдання №2</a></li>
+        <li><a href="/task_lab4/task4.html" target="_blank">Завдання №4</a></li>
+        <li><a href="/task_lab4/task6.html" target="_blank">Завдання №6</a></li>
+        <li><a href="/task_lab4/task7.html" target="_blank">Завдання №7</a></li>
+        <li><a href="/task_lab4/task8.html" target="_blank">Завдання №8</a></li>
+        <li><a href="/task_lab4/task9.html" target="_blank">Завдання №9</a></li>
+        <li><a href="/task_lab4/task10.html" target="_blank">Завдання №10</a></li>
+      </ul>
+    </div>
 
-        document.querySelectorAll('.sidebar button').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('.sidebar button').forEach(btn => btn.classList.remove('active-button'));
-                button.classList.add('active-button');
-            });
-        });
+    <div id="screenshots-4" class="lab4-section content-section text-content">
+      <h2>Скріншоти до виконаних завдань</h2>
+      <!-- Повторювані блоки -->
+      <div>
+        <h3>Завдання №2</h3>
+        <img src="img/task2-code.png" alt="Код завдання 2">
+        <img src="/images/screenshots/task2_screenshot.png" alt="Результат завдання 2">
+      </div>
+      <!-- Повторити шаблон для інших -->
+    </div>
 
-        document.querySelectorAll('nav button').forEach(button => {
-            button.addEventListener('click', () => {
-                document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active-button'));
-                button.classList.add('active-button');
-            });
-        });
-    </script>
+    <div id="conclusions-4" class="lab4-section content-section text-content">
+      <h2>Висновки</h2>
+      <p>Під час виконання завдань були закріплені навички роботи з класами, DOM, обробкою та делегуванням подій, throttle та модульною структурою коду.</p>
+    </div>
+  </div>
+
+  <!-- ЛР №5 -->
+  <div id="lab5" class="content-section">
+    <div class="sidebar">
+      <button onclick="showSection('goal5', 'lab5')">Тема ЛР№5</button>
+      <button onclick="showSection('tasks-5', 'lab5')">Завдання</button>
+      <button onclick="showSection('screenshots-5', 'lab5')">Скріншоти</button>
+      <button onclick="showSection('conclusions-5', 'lab5')">Висновки</button>
+    </div>
+
+    <div id="goal5" class="lab5-section content-section text-content">
+      <p><strong>Тема:</strong> WEB-СХОВИЩЕ. WEB STORAGE API. МОДУЛЬНОСТЬ КОДУ. СТВОРЕННЯ МОДАЛЬНОГО ВІКНА.</p>
+      <p><strong>Мета:</strong> Придбати навички використання Web Storage API, створення модального вікна, делегування подій та структурування коду.</p>
+    </div>
+
+    <div id="tasks-5" class="lab5-section content-section text-content">
+      <ul>
+        <li><a href="/tasks_lab5/task1.html" target="_blank">Завдання №1</a></li>
+        <li><a href="/tasks_lab5/task2.html" target="_blank">Завдання №2</a></li>
+      </ul>
+    </div>
+
+    <div id="screenshots-5" class="lab5-section content-section text-content">
+      <h2>Скріншоти до виконаних завдань</h2>
+      <div>
+        <h3>Завдання №1</h3>
+        <img src="img/task1-5-code.png" alt="Код завдання 1 ЛР5">
+        <img src="/images/screenshots/task1-5_screenshot.png" alt="Результат завдання 1 ЛР5">
+      </div>
+      <div>
+        <h3>Завдання №2</h3>
+        <img src="img/task2-5-code.png" alt="Код завдання 2 ЛР5">
+        <img src="/images/screenshots/task2-5_screenshot.png" alt="Результат завдання 2 ЛР5">
+      </div>
+    </div>
+
+    <div id="conclusions-5" class="lab5-section content-section text-content">
+      <h2>Висновки</h2>
+      <p>Опрацьовано Web Storage API, реалізовано модальне вікно, використано делегування подій та розбивку коду на модулі.</p>
+    </div>
+  </div>
+
+  <!-- ЛР №6 -->
+<div id="lab6" class="content-section">
+  <div class="sidebar">
+    <button onclick="showSection('goal6', 'lab6')">Тема ЛР№6</button>
+    <button onclick="showSection('tasks-6', 'lab6')">Завдання</button>
+    <button onclick="showSection('screenshots-6', 'lab6')">Скріншоти</button>
+    <button onclick="showSection('conclusions-6', 'lab6')">Висновки</button>
+  </div>
+
+  <div id="goal6" class="lab6-section content-section text-content">
+    <p><strong>Тема:</strong> ПОДІЇ КЛАВІАТУРИ. ФОРМА. ПОДІЇ ІНПУТІВ. ФОРМАТУВАННЯ ВВЕДЕНИХ ДАНИХ.</p>
+    <p><strong>Мета:</strong> Закріпити навички роботи з подіями клавіатури, формами, валідацією введення та обробкою даних із форм.</p>
+  </div>
+
+  <div id="tasks-6" class="lab6-section content-section text-content">
+    <ul>
+      <li><a href="/tasks_lab6/task1.html" target="_blank">Завдання №1</a></li>
+      <li><a href="/tasks_lab6/task2.html" target="_blank">Завдання №2</a></li>
+      <li><a href="/tasks_lab6/task3.html" target="_blank">Завдання №3</a></li>
+    </ul>
+  </div>
+
+  <div id="screenshots-6" class="lab6-section content-section text-content">
+    <h2>Скріншоти до виконаних завдань</h2>
+    <div>
+      <h3>Завдання №1</h3>
+      <img src="img/task1-6-code.png" alt="Код завдання 1 ЛР6">
+      <img src="/images/screenshots/task1-6_screenshot.png" alt="Результат завдання 1 ЛР6">
+    </div>
+    <div>
+      <h3>Завдання №2</h3>
+      <img src="img/task2-6-code.png" alt="Код завдання 2 ЛР6">
+      <img src="/images/screenshots/task2-6_screenshot.png" alt="Результат завдання 2 ЛР6">
+    </div>
+    <div>
+      <h3>Завдання №3</h3>
+      <img src="img/task3-6-code.png" alt="Код завдання 3 ЛР6">
+      <img src="/images/screenshots/task3-6_screenshot.png" alt="Результат завдання 3 ЛР6">
+    </div>
+  </div>
+
+  <div id="conclusions-6" class="lab6-section content-section text-content">
+    <h2>Висновки</h2>
+    <p>Було опрацьовано події клавіатури, реалізовано обробку введення даних у форму, валідацію та форматування. Застосовано практики інтерактивної взаємодії користувача з інтерфейсом.</p>
+  </div>
+</div>
+
+
+</main>
+
+<script>
+  function showLab(labId) {
+    document.querySelectorAll('.content-section').forEach(lab => lab.classList.remove('active'));
+    document.getElementById(labId).classList.add('active');
+  }
+
+  function showSection(sectionId, labId) {
+    const sections = document.getElementById(labId).querySelectorAll(`.${labId}-section`);
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(labId).querySelector(`#${sectionId}`).style.display = 'block';
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showLab('lab4');
+    showSection('goal4', 'lab4');
+  });
+
+  document.querySelectorAll('.sidebar button').forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentNode.querySelectorAll('button').forEach(btn => btn.classList.remove('active-button'));
+      button.classList.add('active-button');
+    });
+  });
+
+  document.querySelectorAll('nav button').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active-button'));
+      button.classList.add('active-button');
+    });
+  });
+</script>
+
 </body>
-
 </html>

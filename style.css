@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #EFECE7;
+    background-color: #9224a598;
 }
 
 /* ????? ??? ????? */
 header {
     padding: 20px;
     display: flex;
-    background-color: #CDCAC5;
+    background-color: #dfb0ed;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,7 +28,7 @@ header {
 
 /* ????? ??? ????????? */
 nav {
-    background-color: #6E7F91;
+    background-color: #cba6e4;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@ nav {
 }
 
     nav button {
-        background-color: #394C60;
+        background-color: #df77e8;
         color: #EFECE7;
         border: none;
         padding: 10px 15px;
@@ -47,14 +47,14 @@ nav {
     }
 
         nav button:hover {
-            background-color: #455f79;
+            background-color: #e138a3;
             color: #ffffff;
             transform: translateY(-2px);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         nav button.active-button {
-            background-color: #A0AEC0;
+            background-color: #e596b8;
             /* ??????? ????? ??? ???????? ?????? */
             color: #1A202C;
             /* ?????-????? ????? */
@@ -78,7 +78,7 @@ main {
 
 /* ????? ??? ???????? */
 .text-content {
-    background-color: #dad7d3;
+    background-color: #f4abd7;
     padding: 20px;
     border-radius: 5px;
     margin: 0;
@@ -105,7 +105,7 @@ main {
 }
 
     .sidebar button {
-        background-color: #46596e;
+        background-color: #c55e7d;
         color: #EFECE7;
         border: none;
         padding: 10px;
@@ -115,14 +115,14 @@ main {
     }
 
         .sidebar button:hover {
-            background-color: #5a718c;
+            background-color: #af126b;
             color: #ffffff;
             transform: translateY(-2px);
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
         }
 
         .sidebar button.active-button {
-            background-color: #A0AEC0;
+            background-color: #c353a1;
             color: #1A202C;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
