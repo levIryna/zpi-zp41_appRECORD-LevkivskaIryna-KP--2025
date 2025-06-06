@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Звіт Лабораторна №4</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    pre {background:#f4f4f4; padding:10px; border-radius:5px; overflow-x:auto;}
+    .task-link {margin-bottom: 10px; display: block;}
+    .screenshot {border:1px solid #aaa; margin:10px 0; max-width:350px;}
+  </style>
+</head>
+<body>
+  <h1>Звіт з лабораторної роботи №4</h1>
+  <h2>Тема:</h2>
+  <p>Класи. Об'єктна модель документа (DOM). Події. Об'єкт події. Делегування подій. Throttle. Модульність коду.</p>
+  <h2>Мета:</h2>
+  <p>Придбати практичні навички роботи з об'єктами, методами об'єкта, callback, стрілочними функціями, реалізація програм засобами JavaScript.</p>
+  <h2>Виконані завдання (парний номер):</h2>
+  <ol>
+    <li><a class="task-link" href="swap.html" target="_blank">Завдання 2: SWAP ME</a></li>
+    <li><a class="task-link" href="resize.html" target="_blank">Завдання 4: Зміна розміру квадрата</a></li>
+    <li><a class="task-link" href="double.html" target="_blank">Завдання 6: Подвоїти значення у списку</a></li>
+    <li><a class="task-link" href="categories.html" target="_blank">Завдання 7: Категорії</a></li>
+    <li><a class="task-link" href="login.html" target="_blank">Завдання 8: Форма логіна</a></li>
+    <li><a class="task-link" href="color.html" target="_blank">Завдання 9: Зміна кольору фону</a></li>
+    <li><a class="task-link" href="boxes.html" target="_blank">Завдання 10: Колекція елементів</a></li>
+  </ol>
+  <h2>Код та короткий опис виконання:</h2>
+
+  <h3>Завдання 2: SWAP ME</h3>
+  <p>Обмін значеннями між двома інпутами по кнопці.</p>
+  <pre>// swap.js
+const btn = document.getElementById('swapBtn');
+const input1 = document.getElementById('input1');
+const input2 = document.getElementById('input2');
+
+btn.addEventListener('click', () => {
+  const temp = input1.value;
+  input1.value = input2.value;
+  input2.value = temp;
+});
+  </pre>
+
+  <h3>Завдання 4: Зміна розміру квадрата</h3>
+  <p>Кнопки змінюють розмір квадрата на ±15px.</p>
+  <pre>// resize.js
+const square = document.getElementById('square');
+const decreaseBtn = document.getElementById('decrease');
+const increaseBtn = document.getElementById('increase');
+
+let size = 60;
+const step = 15;
+
+function updateSquare() {
+  square.style.width = size + 'px';
+  square.style.height = size + 'px';
+}
+
+updateSquare();
+
+decreaseBtn.addEventListener('click', () => {
+  if (size > step) size -= step;
+  updateSquare();
+});
+
+increaseBtn.addEventListener('click', () => {
+  size += step;
+  updateSquare();
+});
+  </pre>
+
+  <h3>Завдання 6: Подвоїти значення у списку</h3>
+  <p>Кнопка множить усі значення у списку на 2.</p>
+  <pre>// double.js
+const btn = document.getElementById('doubleBtn');
+const list = document.getElementById('numList');
+
+btn.addEventListener('click', () => {
+  Array.from(list.children).forEach(li => {
+    li.textContent = Number(li.textContent) * 2;
+  });
+});
+  </pre>
+
+  <h3>Завдання 7: Категорії</h3>
+  <p>Вивід у консоль кількості категорій, назв та кількості елементів у кожній.</p>
+  <pre>// categories.js
+const categories = document.querySelectorAll('#categories .item');
+console.log('Number of categories:', categories.length);
+categories.forEach(cat => {
+  const title = cat.querySelector('h2').textContent;
+  const count = cat.querySelectorAll('ul li').length;
+  console.log(`Category: ${title}`);
+  console.log(`Elements: ${count}`);
+});
+  </pre>
+
+  <h3>Завдання 8: Форма логіна</h3>
+  <p>Валідація, вивід даних у консоль, очищення форми.</p>
+  <pre>// login.js
+const form = document.querySelector('.login-form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const { email, password } = form.elements;
+  const emailValue = email.value.trim();
+  const passwordValue = password.value.trim();
+
+  if (!emailValue || !passwordValue) {
+    alert('All form fields must be filled in');
+    return;
+  }
+
+  const data = {
+    email: emailValue,
+    password: passwordValue
+  };
+  console.log(data);
+  form.reset();
+});
+  </pre>
+
+  <h3>Завдання 9: Зміна кольору фону</h3>
+  <p>Кнопка змінює колір фону body, hex-код відображається у span.</p>
+  <pre>// color.js
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+const btn = document.querySelector('.change-color');
+const span = document.querySelector('.color');
+
+btn.addEventListener('click', () => {
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  span.textContent = color;
+});
+  </pre>
+
+  <h3>Завдання 10: Колекція елементів</h3>
+  <p>Створення та очищення колекції div-елементів з випадковим кольором і розміром.</p>
+  <pre>// boxes.js
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
+
+const controls = document.getElementById('controls');
+const input = controls.querySelector('input');
+const createBtn = controls.querySelector('[data-create]');
+const destroyBtn = controls.querySelector('[data-destroy]');
+const boxes = document.getElementById('boxes');
+
+function createBoxes(amount) {
+  boxes.innerHTML = '';
+  let size = 30;
+  for (let i = 0; i < amount; i++) {
+    const div = document.createElement('div');
+    div.style.width = `${size}px`;
+    div.style.height = `${size}px`;
+    div.style.backgroundColor = getRandomHexColor();
+    div.style.margin = '5px';
+    boxes.appendChild(div);
+    size += 10;
+  }
+}
+
+createBtn.addEventListener('click', () => {
+  const value = Number(input.value);
+  if (value >= 1 && value <= 100) {
+    createBoxes(value);
+    input.value = '';
+  }
+});
+
+destroyBtn.addEventListener('click', () => {
+  boxes.innerHTML = '';
+});
+  </pre>
+
+  <h2>Висновок:</h2>
+  <p>В ході виконання лабораторної роботи №4 я закріпив(ла) навички роботи з DOM, подіями, об'єктами, стрілочними функціями та модульністю коду на практиці.</p>
+</body>
+</html> 
